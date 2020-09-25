@@ -1,2 +1,2 @@
 dmesg Linux Kernel启动过程log记录,使用尾标functionpoint做手动log区分  
-集中于pci初始化与acpi方式的pci美剧过程中
+集中于pci初始化与acpi方式的pci枚举过程中
