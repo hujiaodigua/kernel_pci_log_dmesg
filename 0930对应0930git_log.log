@@ -1,0 +1,2726 @@
+[    0.000000] microcode: microcode updated early to revision 0xd6, date = 2020-04-23
+[    0.000000] Linux version 4.15.9+ (root@Yee-680G4) (gcc version 5.5.0 20171010 (Ubuntu 5.5.0-12ubuntu1~16.04)) #27 SMP Wed Sep 30 17:01:59 CST 2020
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.15.9+ root=UUID=da0e40f1-3840-43a9-b61a-7b465a7673d3 ro quiet splash vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.000000] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.000000] x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009f000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000be6aafff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000be6ab000-0x00000000bf98efff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000bf98f000-0x00000000bfb8efff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000bfb8f000-0x00000000bfc0efff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000bfc0f000-0x00000000bfc0ffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000bfc10000-0x00000000d47fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe010000-0x00000000fe010fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x00000004277fffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] efi: EFI v2.60 by HP
+[    0.000000] efi:  ACPI=0xbfc0e000  ACPI 2.0=0xbfc0e014  SMBIOS=0xbee75000  ESRT=0xbee76018  MEMATTR=0xaf752018 
+[    0.000000] random: fast init done
+[    0.000000] SMBIOS 3.1 present.
+[    0.000000] DMI: HP HP ProDesk 680 G4 MT/8580, BIOS R04 Ver. 02.11.01 04/27/2020
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] e820: last_pfn = 0x427800 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: write-back
+[    0.000000] MTRR fixed ranges enabled:
+[    0.000000]   00000-9FFFF write-back
+[    0.000000]   A0000-BFFFF uncachable
+[    0.000000]   C0000-FFFFF write-protect
+[    0.000000] MTRR variable ranges enabled:
+[    0.000000]   0 base 00E0000000 mask 7FE0000000 uncachable
+[    0.000000]   1 base 00D0000000 mask 7FF0000000 uncachable
+[    0.000000]   2 base 00C8000000 mask 7FF8000000 uncachable
+[    0.000000]   3 base 00C4000000 mask 7FFC000000 uncachable
+[    0.000000]   4 base 2000000000 mask 6000000000 uncachable
+[    0.000000]   5 base 1000000000 mask 7000000000 uncachable
+[    0.000000]   6 base 0800000000 mask 7800000000 uncachable
+[    0.000000]   7 base 4000000000 mask 4000000000 uncachable
+[    0.000000]   8 disabled
+[    0.000000]   9 disabled
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.000000] e820: last_pfn = 0xbfc10 max_arch_pfn = 0x400000000
+[    0.000000] esrt: Reserving ESRT space from 0x00000000bee76018 to 0x00000000bee76050.
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] Base memory trampoline at [        (ptrval)] 99000 size 24576
+[    0.000000] Using GB pages for direct mapping
+[    0.000000] BRK [0x22d3a000, 0x22d3afff] PGTABLE
+[    0.000000] BRK [0x22d3b000, 0x22d3bfff] PGTABLE
+[    0.000000] BRK [0x22d3c000, 0x22d3cfff] PGTABLE
+[    0.000000] BRK [0x22d3d000, 0x22d3dfff] PGTABLE
+[    0.000000] BRK [0x22d3e000, 0x22d3efff] PGTABLE
+[    0.000000] BRK [0x22d3f000, 0x22d3ffff] PGTABLE
+[    0.000000] Secure boot could not be determined
+[    0.000000] RAMDISK: [mem 0x23328000-0x3e1b0fff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000BFC0E014 000024 (v02 HPQOEM)
+[    0.000000] ACPI: XSDT 0x00000000BFBC7188 0000DC (v01 HPQOEM SLIC-BPC 00000000 INTL 20160422)
+[    0.000000] ACPI: FACP 0x00000000BFC08000 000114 (v06 HPQOEM SLIC-BPC 00000000 HP   00000001)
+[    0.000000] ACPI: DSDT 0x00000000BFBE5000 01E092 (v02 HPQOEM 8580     00000000 INTL 20160527)
+[    0.000000] ACPI: FACS 0x00000000BFB3F000 000040
+[    0.000000] ACPI: SSDT 0x00000000BFC0C000 00012A (v02 HP     ShmTable 00000001 INTL 20160527)
+[    0.000000] ACPI: SSDT 0x00000000BFC0A000 001B5F (v02 CpuRef CpuSsdt  00003000 INTL 20160527)
+[    0.000000] ACPI: SSDT 0x00000000BFC09000 0009CF (v02 CtdpB  CtdpB    00001000 INTL 20160527)
+[    0.000000] ACPI: HPET 0x00000000BFC07000 000038 (v01 HPQOEM 8580     00000001 HP   00000001)
+[    0.000000] ACPI: APIC 0x00000000BFC06000 00012C (v03 HPQOEM 8580     00000001 HP   00000001)
+[    0.000000] ACPI: MCFG 0x00000000BFC05000 00003C (v01 HPQOEM 8580     00000001 HP   00000001)
+[    0.000000] ACPI: WSMT 0x00000000BFC04000 000028 (v01 HPQOEM 8580     00000001 HP   00000001)
+[    0.000000] ACPI: SSDT 0x00000000BFBE4000 000734 (v01 HPQOEM PtidDevc 00001000 INTL 20160527)
+[    0.000000] ACPI: SSDT 0x00000000BFBE3000 000B27 (v02 HPQOEM HP_XHC_P 00000000 INTL 20160527)
+[    0.000000] ACPI: SSDT 0x00000000BFBDF000 0030ED (v02 SaSsdt SaSsdt   00003000 INTL 20160527)
+[    0.000000] ACPI: LPIT 0x00000000BFBDE000 000094 (v01 INTEL  CFL      20170001 INTL 20160422)
+[    0.000000] ACPI: WSMT 0x00000000BFBDD000 000028 (v01 INTEL  CFL      20170001 INTL 20160422)
+[    0.000000] ACPI: SSDT 0x00000000BFBDC000 00044C (v02 INTEL  Wwan     00000001 INTL 20160527)
+[    0.000000] ACPI: UEFI 0x00000000BFB39000 000042 (v01 INTEL  CFL      20170001 INTL 20160422)
+[    0.000000] ACPI: OEML 0x00000000BFBDB000 000028 (v03 INTEL  CFL      20170001 INTL 20160422)
+[    0.000000] ACPI: DMAR 0x00000000BFBDA000 0000C8 (v01 INTEL  CFL      00000002      01000013)
+[    0.000000] ACPI: SSDT 0x00000000BFBCB000 00E899 (v01 HP     HPINDTWL 00001000 INTL 20160527)
+[    0.000000] ACPI: SSDT 0x00000000BFBCA000 000032 (v01 HP     HPCONDEV 00001000 INTL 20160527)
+[    0.000000] ACPI: SSDT 0x00000000BFBC9000 000069 (v01 HP     HPCAHWID 00001000 INTL 20160527)
+[    0.000000] ACPI: ASF! 0x00000000BFBC8000 0000A0 (v32 HPQOEM  UYA     20170001 INTL 20160422)
+[    0.000000] ACPI: FPDT 0x00000000BFC0D000 000044 (v01 INTEL  CFL      20170001 INTL 20160422)
+[    0.000000] ACPI: BGRT 0x00000000BFBC6000 000038 (v01 INTEL  CFL      20170001 INTL 20160422)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x00000004277fffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x4277d3000-0x4277fdfff]
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.000000]   Normal   [mem 0x0000000100000000-0x00000004277fffff]
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x00000000be6aafff]
+[    0.000000]   node   0: [mem 0x00000000bfc0f000-0x00000000bfc0ffff]
+[    0.000000]   node   0: [mem 0x0000000100000000-0x00000004277fffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x00000004277fffff]
+[    0.000000] On node 0 totalpages: 4087370
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 21 pages reserved
+[    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 12123 pages used for memmap
+[    0.000000]   DMA32 zone: 775852 pages, LIFO batch:31
+[    0.000000]   Normal zone: 51680 pages used for memmap
+[    0.000000]   Normal zone: 3307520 pages, LIFO batch:31
+[    0.000000] Reserved but unavailable: 99 pages
+[    0.000000] tboot: non-0 tboot_addr but it is not of type E820_TYPE_RESERVED
+[    0.000000] ACPI: PM-Timer IO Port: 0x1808
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[    0.000000] ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+[    0.000000] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.000000] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xbe6ab000-0xbf98efff]
+[    0.000000] PM: Registered nosave memory: [mem 0xbf98f000-0xbfb8efff]
+[    0.000000] PM: Registered nosave memory: [mem 0xbfb8f000-0xbfc0efff]
+[    0.000000] PM: Registered nosave memory: [mem 0xbfc10000-0xd47fffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xd4800000-0xfe00ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfe010000-0xfe010fff]
+[    0.000000] PM: Registered nosave memory: [mem 0xfe011000-0xfeffffff]
+[    0.000000] PM: Registered nosave memory: [mem 0xff000000-0xffffffff]
+[    0.000000] e820: [mem 0xd4800000-0xfe00ffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on bare hardware
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[    0.000000] percpu: Embedded 46 pages/cpu @        (ptrval) s151552 r8192 d28672 u262144
+[    0.000000] pcpu-alloc: s151552 r8192 d28672 u262144 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 1 2 3 4 5 6 7 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 4023482
+[    0.000000] Policy zone: Normal
+[    0.000000] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.9+ root=UUID=da0e40f1-3840-43a9-b61a-7b465a7673d3 ro quiet splash vt.handoff=7
+[    0.000000] Calgary: detecting Calgary via BIOS EBDA area
+[    0.000000] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[    0.000000] Memory: 15453816K/16349480K available (12300K kernel code, 2470K rwdata, 4196K rodata, 2388K init, 2416K bss, 895664K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] ftrace: allocating 38976 entries in 153 pages
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[    0.000000] 	Tasks RCU enabled.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[    0.000000] NR_IRQS: 524544, nr_irqs: 2048, preallocated irqs: 16
+[    0.000000] Console: colour dummy device 80x25
+[    0.000000] console [tty0] enabled
+[    0.000000] ACPI: Core revision 20170831
+[    0.000000] ACPI Error: [\_SB_.PCI0.XHC_.RHUB.HS11] Namespace lookup failure, AE_NOT_FOUND (20170831/dswload-210)
+[    0.000000] ACPI Exception: AE_NOT_FOUND, During name lookup/catalog (20170831/psobject-252)
+[    0.000000] ACPI Exception: AE_NOT_FOUND, (SSDT:HP_XHC_P) while loading table (20170831/tbxfload-228)
+[    0.000000] ACPI Error: 1 table load failures, 10 successful (20170831/tbxfload-246)
+[    0.000000] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+[    0.000000] hpet clockevent registered
+[    0.004000] APIC: Switch to symmetric I/O mode setup
+[    0.004000] DMAR: Host address width 39
+[    0.004000] DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.004000] DMAR: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+[    0.004000] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.004000] DMAR: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[    0.004000] DMAR: RMRR base: 0x000000bf81d000 end: 0x000000bf83cfff
+[    0.004000] DMAR: RMRR base: 0x000000c4000000 end: 0x000000d47fffff
+[    0.004000] DMAR: RMRR base: 0x000000bf86e000 end: 0x000000bf8edfff
+[    0.004000] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.004000] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.004000] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.004000] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.004000] x2apic enabled
+[    0.004000] Switched APIC routing to cluster x2apic.
+[    0.016000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.036000] tsc: Detected 3000.000 MHz processor
+[    0.036000] Calibrating delay loop (skipped), value calculated using timer frequency.. 6000.00 BogoMIPS (lpj=12000000)
+[    0.036000] pid_max: default: 32768 minimum: 301
+[    0.036000] Security Framework initialized
+[    0.036000] Yama: becoming mindful.
+[    0.036000] AppArmor: AppArmor initialized
+[    0.036000] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+[    0.036000] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.036000] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.036000] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.036000] CPU: Physical Processor ID: 0
+[    0.036000] CPU: Processor Core ID: 0
+[    0.036000] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.036000] ENERGY_PERF_BIAS: View and update with x86_energy_perf_policy(8)
+[    0.036000] mce: CPU supports 14 MCE banks
+[    0.036000] CPU0: Thermal monitoring enabled (TM1)
+[    0.036000] process: using mwait in idle threads
+[    0.036000] Last level iTLB entries: 4KB 128, 2MB 8, 4MB 8
+[    0.036000] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.036000] Spectre V2 : Mitigation: Full generic retpoline
+[    0.036000] Spectre V2 : Spectre v2 mitigation: Filling RSB on context switch
+[    0.036000] Spectre V2 : Spectre v2 mitigation: Enabling Indirect Branch Prediction Barrier
+[    0.036000] Freeing SMP alternatives memory: 36K
+[    0.042073] TSC deadline timer enabled
+[    0.042084] smpboot: CPU0: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz (family: 0x6, model: 0x9e, stepping: 0xd)
+[    0.042136] Performance Events: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[    0.042165] ... version:                4
+[    0.042165] ... bit width:              48
+[    0.042165] ... generic registers:      8
+[    0.042166] ... value mask:             0000ffffffffffff
+[    0.042166] ... max period:             00007fffffffffff
+[    0.042167] ... fixed-purpose events:   3
+[    0.042167] ... event mask:             00000007000000ff
+[    0.042197] Hierarchical SRCU implementation.
+[    0.043137] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.043147] smp: Bringing up secondary CPUs ...
+[    0.043207] x86: Booting SMP configuration:
+[    0.043208] .... node  #0, CPUs:      #1 #2 #3 #4 #5 #6 #7
+[    0.053450] smp: Brought up 1 node, 8 CPUs
+[    0.053450] smpboot: Max logical packages: 1
+[    0.053450] smpboot: Total of 8 processors activated (48000.00 BogoMIPS)
+[    0.056282] devtmpfs: initialized
+[    0.056282] x86/mm: Memory block size: 128MB
+[    0.057014] evm: security.selinux
+[    0.057014] evm: security.SMACK64
+[    0.057015] evm: security.SMACK64EXEC
+[    0.057015] evm: security.SMACK64TRANSMUTE
+[    0.057015] evm: security.SMACK64MMAP
+[    0.057016] evm: security.apparmor
+[    0.057016] evm: security.ima
+[    0.057017] evm: security.capability
+[    0.057030] PM: Registering ACPI NVS region [mem 0xbf98f000-0xbfb8efff] (2097152 bytes)
+[    0.057030] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.057030] futex hash table entries: 2048 (order: 5, 131072 bytes)
+[    0.057030] pinctrl core: initialized pinctrl subsystem
+[    0.057030] driver_register -- functionpoint
+[    0.057030] bus_add_driver -- functionpoint
+[    0.057030] functionpoint -- bus: 'platform': add driver reg-dummy
+[    0.057030] really_probe -- functionpoint
+[    0.057030] functionpoint -- bus: 'platform': really_probe: probing driver reg-dummy with device reg-dummy
+[    0.057030] RTC time:  9:22:13, date: 09/30/20
+[    0.057030] NET: Registered protocol family 16
+[    0.057030] audit: initializing netlink subsys (disabled)
+[    0.057030] audit: type=2000 audit(1601457733.056:1): state=initialized audit_enabled=0 res=1
+[    0.057030] driver_register -- functionpoint
+[    0.057030] bus_add_driver -- functionpoint
+[    0.057030] functionpoint -- bus: 'platform': add driver sram
+[    0.057030] driver_register -- functionpoint
+[    0.057030] bus_add_driver -- functionpoint
+[    0.057030] functionpoint -- bus: 'platform': add driver syscon
+[    0.057030] driver_register -- functionpoint
+[    0.057030] bus_add_driver -- functionpoint
+[    0.057030] functionpoint -- bus: 'i2c': add driver dummy
+[    0.057030] cpuidle: using governor ladder
+[    0.057030] cpuidle: using governor menu
+[    0.057030] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.057030] ACPI: bus type PCI registered
+[    0.057030] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.057030] start pci_arch_init -- functionpoint
+[    0.057030] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+[    0.057030] PCI: not using MMCONFIG
+[    0.057030] PCI: Using configuration type 1 for base access
+[    0.057030] end pci_arch_init -- functionpoint
+[    0.057118] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.057118] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'i2c': add driver sx150x-pinctrl
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'platform': add driver byt_gpio
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'platform': add driver cherryview-pinctrl
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'platform': add driver lp_gpio
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'platform': add driver rc5t583-gpio
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'platform': add driver palmas-gpio
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'platform': add driver tps6586x-gpio
+[    0.057119] driver_register -- functionpoint
+[    0.057119] bus_add_driver -- functionpoint
+[    0.057119] functionpoint -- bus: 'platform': add driver tps65910-gpio
+[    0.057119] ACPI: Added _OSI(Module Device)
+[    0.057119] ACPI: Added _OSI(Processor Device)
+[    0.057119] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.057119] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.061847] ACPI: Executed 30 blocks of module-level executable AML code
+[    0.072037] ACPI: [Firmware Bug]: BIOS _OSI(Linux) query ignored
+[    0.080031] ACPI: Dynamic OEM Table Load:
+[    0.080042] ACPI: SSDT 0xFFFF8AC514FB3900 0000F4 (v02 PmRef  Cpu0Psd  00003000 INTL 20160527)
+[    0.080274] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.080395] ACPI: \_SB_.PR00: _OSC native thermal LVT Acked
+[    0.081358] ACPI: Dynamic OEM Table Load:
+[    0.081364] ACPI: SSDT 0xFFFF8AC514FB9400 000400 (v02 PmRef  Cpu0Cst  00003001 INTL 20160527)
+[    0.081589] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.081823] ACPI: Dynamic OEM Table Load:
+[    0.081829] ACPI: SSDT 0xFFFF8AC514EF2800 000605 (v02 PmRef  Cpu0Ist  00003000 INTL 20160527)
+[    0.082034] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.082228] ACPI: Dynamic OEM Table Load:
+[    0.082232] ACPI: SSDT 0xFFFF8AC514F36800 000149 (v02 PmRef  Cpu0Hwp  00003000 INTL 20160527)
+[    0.082428] ACPI: Executed 2 blocks of module-level executable AML code
+[    0.082602] ACPI: Dynamic OEM Table Load:
+[    0.082607] ACPI: SSDT 0xFFFF8AC514EF7800 000724 (v02 PmRef  HwpLvt   00003000 INTL 20160527)
+[    0.082789] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.083286] ACPI: Dynamic OEM Table Load:
+[    0.083292] ACPI: SSDT 0xFFFF8AC514EF3800 0005FC (v02 PmRef  ApIst    00003000 INTL 20160527)
+[    0.083692] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.083888] ACPI: Dynamic OEM Table Load:
+[    0.083893] ACPI: SSDT 0xFFFF8AC514FBE400 000317 (v02 PmRef  ApHwp    00003000 INTL 20160527)
+[    0.084174] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.084495] ACPI: Dynamic OEM Table Load:
+[    0.084501] ACPI: SSDT 0xFFFF8AC517145000 000AB0 (v02 PmRef  ApPsd    00003000 INTL 20160527)
+[    0.085351] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.085551] ACPI: Dynamic OEM Table Load:
+[    0.085556] ACPI: SSDT 0xFFFF8AC514FB8000 00030A (v02 PmRef  ApCst    00003000 INTL 20160527)
+[    0.085835] ACPI: Executed 1 blocks of module-level executable AML code
+[    0.088800] ACPI: EC: EC started
+[    0.088800] ACPI: EC: interrupt blocked
+[    0.088817] ACPI: \_SB_.PCI0.LPCB.EC0_: Used as first EC
+[    0.088818] ACPI: \_SB_.PCI0.LPCB.EC0_: GPE=0x6e, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.088819] ACPI: \_SB_.PCI0.LPCB.EC0_: Used as boot DSDT EC to handle transactions
+[    0.088820] ACPI: Interpreter enabled
+[    0.088869] ACPI: (supports S0 S3 S4 S5)
+[    0.088869] ACPI: Using IOAPIC for interrupt routing
+[    0.088909] PCI: MMCONFIG for domain 0000 [bus 00-3f] at [mem 0xf8000000-0xfbffffff] (base 0xf8000000)
+[    0.091566] PCI: MMCONFIG at [mem 0xf8000000-0xfbffffff] reserved in ACPI motherboard resources
+[    0.091571] acpi_pci_root_init --functionpoint
+[    0.091572] acpi_hest_init -- functionpoint
+[    0.091576] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.091971] driver_register -- functionpoint
+[    0.091971] bus_add_driver -- functionpoint
+[    0.091974] functionpoint -- bus: 'platform': add driver clk-lpt
+[    0.092000] ACPI: Enabled 4 GPEs in block 00 to 7F
+[    0.092001] acpi_bus_scan -- functionpoint
+[    0.098961] ACPI: Power Resource [USBC] (on)
+[    0.099789] ACPI: Power Resource [WRST] (on)
+[    0.100205] ACPI: Power Resource [WRST] (on)
+[    0.100608] ACPI: Power Resource [WRST] (on)
+[    0.101014] ACPI: Power Resource [WRST] (on)
+[    0.101426] ACPI: Power Resource [WRST] (on)
+[    0.101826] ACPI: Power Resource [WRST] (on)
+[    0.102229] ACPI: Power Resource [WRST] (on)
+[    0.102634] ACPI: Power Resource [WRST] (on)
+[    0.103038] ACPI: Power Resource [WRST] (on)
+[    0.103438] ACPI: Power Resource [WRST] (on)
+[    0.103840] ACPI: Power Resource [WRST] (on)
+[    0.104246] ACPI: Power Resource [WRST] (on)
+[    0.104646] ACPI: Power Resource [WRST] (on)
+[    0.105051] ACPI: Power Resource [WRST] (on)
+[    0.105461] ACPI: Power Resource [WRST] (on)
+[    0.105861] ACPI: Power Resource [WRST] (on)
+[    0.106264] ACPI: Power Resource [WRST] (on)
+[    0.106672] ACPI: Power Resource [WRST] (on)
+[    0.107080] ACPI: Power Resource [WRST] (on)
+[    0.107493] ACPI: Power Resource [WRST] (on)
+[    0.109209] ACPI: Power Resource [V0PR] (on)
+[    0.109424] ACPI: Power Resource [V1PR] (on)
+[    0.109634] ACPI: Power Resource [V2PR] (on)
+[    0.114246] ACPI: Power Resource [WRST] (on)
+[    0.116474] acpi_pci_root_add -- functionpoint
+[    0.116865] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+[    0.116868] ACPI: functionpoint -- PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+[    0.116874] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI]
+[    0.120264] acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug PME AER PCIeCapability]
+[    0.120265] acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+[    0.120279] pci_acpi_scan_root -- functionpoint
+[    0.120280] pci_find_bus -- functionpoint
+[    0.120282] functionpoint -- domain_num = 0, bus_num = 0
+[    0.120285] pci_find_next_bus -- functionpoint
+[    0.120285] not found bus -- functionpoint
+[    0.120298] acpi_pci_root_create -- functionpoint
+[    0.120685] pci_create_root_bus -- functionpoint
+[    0.120687] pci_alloc_host_bridge -- functionpoint
+[    0.120689] pci_register_host_bridge -- functionpoint
+[    0.120691] pci_find_bus -- functionpoint
+[    0.120692] functionpoint -- domain_num = 0, bus_num = 0
+[    0.120695] pci_find_next_bus -- functionpoint
+[    0.120695] not found bus -- functionpoint
+[    0.121755] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121769] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121784] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121796] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121807] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121821] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121828] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121841] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121854] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121860] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121871] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121919] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.121972] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122024] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122076] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122128] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122180] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122232] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122280] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122334] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122386] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122439] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122492] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122543] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122596] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122648] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122700] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122754] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122806] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122859] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122911] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.122964] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123013] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123066] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123118] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123134] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123151] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123166] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123177] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123189] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123194] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123201] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123208] PCI host bridge to bus 0000:00
+[    0.123212] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.123213] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.123214] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.123215] pci_bus 0000:00: root bus resource [mem 0xd4800000-0xf7ffffff window]
+[    0.123216] pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+[    0.123217] pci_bus 0000:00: root bus resource [mem 0xfc800000-0xfe7fffff window]
+[    0.123218] pci_bus 0000:00: root bus resource [bus 00-3e]
+[    0.123219] pci_scan_child_bus_extend -- functionpoint
+[    0.123220] pci_bus 0000:00: functionpoint -- scanning bus
+[    0.123223] pci_scan_slot -- functionpoint
+[    0.123223] pci_scan_single_device -- functionpoint
+[    0.123224] pci_get_slot -- functionpoint
+[    0.123226] pci_scan_device -- functionpoint
+[    0.123227] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.123230] functionpoint -- dev_vendor: 8086, dev_device: 3e30
+[    0.123232] pci_setup_device -- functionpoint
+[    0.123238] pci 0000:00:00.0: [8086:3e30] type 00 class 0x060000
+[    0.123240] pci 0000:00:00.0: functionpoint -- [8086:3e30] type 00 class 0x060000
+[    0.123254] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.123267] pci_device_add -- functionpoint
+[    0.124276] functionpoint -- fn = 0, devfn = 0, fn+devfn = 0
+[    0.124279] next_fn -- functionpoint
+[    0.124280] pci_scan_slot -- functionpoint
+[    0.124281] pci_scan_single_device -- functionpoint
+[    0.124282] pci_get_slot -- functionpoint
+[    0.124284] pci_scan_device -- functionpoint
+[    0.124285] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.124296] functionpoint -- fn = 0, devfn = 8, fn+devfn = 8
+[    0.124299] pci_scan_slot -- functionpoint
+[    0.124299] pci_scan_single_device -- functionpoint
+[    0.124300] pci_get_slot -- functionpoint
+[    0.124302] pci_scan_device -- functionpoint
+[    0.124303] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.124305] functionpoint -- dev_vendor: 8086, dev_device: 3e98
+[    0.124308] pci_setup_device -- functionpoint
+[    0.124313] pci 0000:00:02.0: [8086:3e98] type 00 class 0x030000
+[    0.124315] pci 0000:00:02.0: functionpoint -- [8086:3e98] type 00 class 0x030000
+[    0.124320] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.124326] pci 0000:00:02.0: reg 0x10: [mem 0xf0000000-0xf0ffffff 64bit]
+[    0.124332] pci 0000:00:02.0: reg 0x18: [mem 0xe0000000-0xefffffff 64bit pref]
+[    0.124335] pci 0000:00:02.0: reg 0x20: [io  0x4000-0x403f]
+[    0.124341] pci_device_add -- functionpoint
+[    0.124348] pci 0000:00:02.0: BAR 2: assigned to efifb
+[    0.125377] functionpoint -- fn = 0, devfn = 16, fn+devfn = 16
+[    0.125379] next_fn -- functionpoint
+[    0.125380] pci_scan_slot -- functionpoint
+[    0.125381] pci_scan_single_device -- functionpoint
+[    0.125382] pci_get_slot -- functionpoint
+[    0.125384] pci_scan_device -- functionpoint
+[    0.125385] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125396] functionpoint -- fn = 0, devfn = 24, fn+devfn = 24
+[    0.125399] pci_scan_slot -- functionpoint
+[    0.125399] pci_scan_single_device -- functionpoint
+[    0.125400] pci_get_slot -- functionpoint
+[    0.125402] pci_scan_device -- functionpoint
+[    0.125403] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125421] functionpoint -- fn = 0, devfn = 32, fn+devfn = 32
+[    0.125424] pci_scan_slot -- functionpoint
+[    0.125424] pci_scan_single_device -- functionpoint
+[    0.125425] pci_get_slot -- functionpoint
+[    0.125427] pci_scan_device -- functionpoint
+[    0.125428] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125446] functionpoint -- fn = 0, devfn = 40, fn+devfn = 40
+[    0.125449] pci_scan_slot -- functionpoint
+[    0.125449] pci_scan_single_device -- functionpoint
+[    0.125450] pci_get_slot -- functionpoint
+[    0.125451] pci_scan_device -- functionpoint
+[    0.125453] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125471] functionpoint -- fn = 0, devfn = 48, fn+devfn = 48
+[    0.125474] pci_scan_slot -- functionpoint
+[    0.125474] pci_scan_single_device -- functionpoint
+[    0.125475] pci_get_slot -- functionpoint
+[    0.125477] pci_scan_device -- functionpoint
+[    0.125478] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125496] functionpoint -- fn = 0, devfn = 56, fn+devfn = 56
+[    0.125499] pci_scan_slot -- functionpoint
+[    0.125499] pci_scan_single_device -- functionpoint
+[    0.125500] pci_get_slot -- functionpoint
+[    0.125502] pci_scan_device -- functionpoint
+[    0.125503] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125521] functionpoint -- fn = 0, devfn = 64, fn+devfn = 64
+[    0.125524] pci_scan_slot -- functionpoint
+[    0.125524] pci_scan_single_device -- functionpoint
+[    0.125525] pci_get_slot -- functionpoint
+[    0.125527] pci_scan_device -- functionpoint
+[    0.125528] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125546] functionpoint -- fn = 0, devfn = 72, fn+devfn = 72
+[    0.125548] pci_scan_slot -- functionpoint
+[    0.125549] pci_scan_single_device -- functionpoint
+[    0.125550] pci_get_slot -- functionpoint
+[    0.125551] pci_scan_device -- functionpoint
+[    0.125553] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125571] functionpoint -- fn = 0, devfn = 80, fn+devfn = 80
+[    0.125574] pci_scan_slot -- functionpoint
+[    0.125574] pci_scan_single_device -- functionpoint
+[    0.125575] pci_get_slot -- functionpoint
+[    0.125577] pci_scan_device -- functionpoint
+[    0.125578] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125596] functionpoint -- fn = 0, devfn = 88, fn+devfn = 88
+[    0.125599] pci_scan_slot -- functionpoint
+[    0.125599] pci_scan_single_device -- functionpoint
+[    0.125600] pci_get_slot -- functionpoint
+[    0.125602] pci_scan_device -- functionpoint
+[    0.125603] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125621] functionpoint -- fn = 0, devfn = 96, fn+devfn = 96
+[    0.125624] pci_scan_slot -- functionpoint
+[    0.125624] pci_scan_single_device -- functionpoint
+[    0.125625] pci_get_slot -- functionpoint
+[    0.125626] pci_scan_device -- functionpoint
+[    0.125628] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125646] functionpoint -- fn = 0, devfn = 104, fn+devfn = 104
+[    0.125649] pci_scan_slot -- functionpoint
+[    0.125649] pci_scan_single_device -- functionpoint
+[    0.125650] pci_get_slot -- functionpoint
+[    0.125652] pci_scan_device -- functionpoint
+[    0.125653] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125671] functionpoint -- fn = 0, devfn = 112, fn+devfn = 112
+[    0.125674] pci_scan_slot -- functionpoint
+[    0.125674] pci_scan_single_device -- functionpoint
+[    0.125675] pci_get_slot -- functionpoint
+[    0.125677] pci_scan_device -- functionpoint
+[    0.125678] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125696] functionpoint -- fn = 0, devfn = 120, fn+devfn = 120
+[    0.125699] pci_scan_slot -- functionpoint
+[    0.125699] pci_scan_single_device -- functionpoint
+[    0.125700] pci_get_slot -- functionpoint
+[    0.125702] pci_scan_device -- functionpoint
+[    0.125703] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125721] functionpoint -- fn = 0, devfn = 128, fn+devfn = 128
+[    0.125724] pci_scan_slot -- functionpoint
+[    0.125724] pci_scan_single_device -- functionpoint
+[    0.125725] pci_get_slot -- functionpoint
+[    0.125726] pci_scan_device -- functionpoint
+[    0.125728] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125746] functionpoint -- fn = 0, devfn = 136, fn+devfn = 136
+[    0.125749] pci_scan_slot -- functionpoint
+[    0.125749] pci_scan_single_device -- functionpoint
+[    0.125750] pci_get_slot -- functionpoint
+[    0.125751] pci_scan_device -- functionpoint
+[    0.125753] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.125760] functionpoint -- dev_vendor: 8086, dev_device: a379
+[    0.125762] pci_setup_device -- functionpoint
+[    0.125774] pci 0000:00:12.0: [8086:a379] type 00 class 0x118000
+[    0.125776] pci 0000:00:12.0: functionpoint -- [8086:a379] type 00 class 0x118000
+[    0.125790] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.125808] pci 0000:00:12.0: reg 0x10: [mem 0x4000107000-0x4000107fff 64bit]
+[    0.125849] pci_device_add -- functionpoint
+[    0.126886] functionpoint -- fn = 0, devfn = 144, fn+devfn = 144
+[    0.126889] next_fn -- functionpoint
+[    0.126889] pci_scan_single_device -- functionpoint
+[    0.126890] pci_get_slot -- functionpoint
+[    0.126892] pci_scan_device -- functionpoint
+[    0.126893] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.126904] functionpoint -- fn = 1, devfn = 144, fn+devfn = 145
+[    0.126907] next_fn -- functionpoint
+[    0.126907] pci_scan_single_device -- functionpoint
+[    0.126908] pci_get_slot -- functionpoint
+[    0.126910] pci_scan_device -- functionpoint
+[    0.126911] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.126930] functionpoint -- fn = 2, devfn = 144, fn+devfn = 146
+[    0.126932] next_fn -- functionpoint
+[    0.126933] pci_scan_single_device -- functionpoint
+[    0.126934] pci_get_slot -- functionpoint
+[    0.126935] pci_scan_device -- functionpoint
+[    0.126937] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.126955] functionpoint -- fn = 3, devfn = 144, fn+devfn = 147
+[    0.126957] next_fn -- functionpoint
+[    0.126958] pci_scan_single_device -- functionpoint
+[    0.126959] pci_get_slot -- functionpoint
+[    0.126960] pci_scan_device -- functionpoint
+[    0.126962] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.126980] functionpoint -- fn = 4, devfn = 144, fn+devfn = 148
+[    0.126982] next_fn -- functionpoint
+[    0.126983] pci_scan_single_device -- functionpoint
+[    0.126984] pci_get_slot -- functionpoint
+[    0.126985] pci_scan_device -- functionpoint
+[    0.126987] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.127005] functionpoint -- fn = 5, devfn = 144, fn+devfn = 149
+[    0.127008] next_fn -- functionpoint
+[    0.127008] pci_scan_single_device -- functionpoint
+[    0.127009] pci_get_slot -- functionpoint
+[    0.127010] pci_scan_device -- functionpoint
+[    0.127012] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.127024] functionpoint -- fn = 6, devfn = 144, fn+devfn = 150
+[    0.127027] next_fn -- functionpoint
+[    0.127027] pci_scan_single_device -- functionpoint
+[    0.127029] pci_get_slot -- functionpoint
+[    0.127030] pci_scan_device -- functionpoint
+[    0.127031] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.127040] functionpoint -- fn = 7, devfn = 144, fn+devfn = 151
+[    0.127042] next_fn -- functionpoint
+[    0.127043] pci_scan_slot -- functionpoint
+[    0.127044] pci_scan_single_device -- functionpoint
+[    0.127045] pci_get_slot -- functionpoint
+[    0.127047] pci_scan_device -- functionpoint
+[    0.127048] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.127060] functionpoint -- fn = 0, devfn = 152, fn+devfn = 152
+[    0.127062] pci_scan_slot -- functionpoint
+[    0.127063] pci_scan_single_device -- functionpoint
+[    0.127064] pci_get_slot -- functionpoint
+[    0.127065] pci_scan_device -- functionpoint
+[    0.127067] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.127070] functionpoint -- dev_vendor: 8086, dev_device: a36d
+[    0.127072] pci_setup_device -- functionpoint
+[    0.127085] pci 0000:00:14.0: [8086:a36d] type 00 class 0x0c0330
+[    0.127087] pci 0000:00:14.0: functionpoint -- [8086:a36d] type 00 class 0x0c0330
+[    0.127102] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.127123] pci 0000:00:14.0: reg 0x10: [mem 0xf1220000-0xf122ffff 64bit]
+[    0.127178] pci_device_add -- functionpoint
+[    0.127228] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.128302] functionpoint -- fn = 0, devfn = 160, fn+devfn = 160
+[    0.128304] next_fn -- functionpoint
+[    0.128304] pci_scan_single_device -- functionpoint
+[    0.128306] pci_get_slot -- functionpoint
+[    0.128307] pci_scan_device -- functionpoint
+[    0.128309] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.128317] functionpoint -- fn = 1, devfn = 160, fn+devfn = 161
+[    0.128320] next_fn -- functionpoint
+[    0.128320] pci_scan_single_device -- functionpoint
+[    0.128322] pci_get_slot -- functionpoint
+[    0.128323] pci_scan_device -- functionpoint
+[    0.128324] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.128327] functionpoint -- dev_vendor: 8086, dev_device: a36f
+[    0.128330] pci_setup_device -- functionpoint
+[    0.128340] pci 0000:00:14.2: [8086:a36f] type 00 class 0x050000
+[    0.128342] pci 0000:00:14.2: functionpoint -- [8086:a36f] type 00 class 0x050000
+[    0.128355] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.128370] pci 0000:00:14.2: reg 0x10: [mem 0xf1232000-0xf1233fff 64bit]
+[    0.128386] pci 0000:00:14.2: reg 0x18: [mem 0x4000106000-0x4000106fff 64bit]
+[    0.128411] pci_device_add -- functionpoint
+[    0.129440] functionpoint -- fn = 2, devfn = 160, fn+devfn = 162
+[    0.129443] next_fn -- functionpoint
+[    0.129443] pci_scan_single_device -- functionpoint
+[    0.129444] pci_get_slot -- functionpoint
+[    0.129446] pci_scan_device -- functionpoint
+[    0.129447] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.129450] functionpoint -- fn = 3, devfn = 160, fn+devfn = 163
+[    0.129453] next_fn -- functionpoint
+[    0.129453] pci_scan_single_device -- functionpoint
+[    0.129454] pci_get_slot -- functionpoint
+[    0.129456] pci_scan_device -- functionpoint
+[    0.129457] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.129466] functionpoint -- fn = 4, devfn = 160, fn+devfn = 164
+[    0.129468] next_fn -- functionpoint
+[    0.129469] pci_scan_single_device -- functionpoint
+[    0.129470] pci_get_slot -- functionpoint
+[    0.129471] pci_scan_device -- functionpoint
+[    0.129472] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.129491] functionpoint -- fn = 5, devfn = 160, fn+devfn = 165
+[    0.129493] next_fn -- functionpoint
+[    0.129494] pci_scan_single_device -- functionpoint
+[    0.129495] pci_get_slot -- functionpoint
+[    0.129496] pci_scan_device -- functionpoint
+[    0.129498] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.129506] functionpoint -- fn = 6, devfn = 160, fn+devfn = 166
+[    0.129509] next_fn -- functionpoint
+[    0.129509] pci_scan_single_device -- functionpoint
+[    0.129510] pci_get_slot -- functionpoint
+[    0.129512] pci_scan_device -- functionpoint
+[    0.129513] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.129532] functionpoint -- fn = 7, devfn = 160, fn+devfn = 167
+[    0.129534] next_fn -- functionpoint
+[    0.129534] pci_scan_slot -- functionpoint
+[    0.129536] pci_scan_single_device -- functionpoint
+[    0.129537] pci_get_slot -- functionpoint
+[    0.129538] pci_scan_device -- functionpoint
+[    0.129540] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.129543] functionpoint -- fn = 0, devfn = 168, fn+devfn = 168
+[    0.129545] pci_scan_slot -- functionpoint
+[    0.129546] pci_scan_single_device -- functionpoint
+[    0.129547] pci_get_slot -- functionpoint
+[    0.129548] pci_scan_device -- functionpoint
+[    0.129550] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.129553] functionpoint -- dev_vendor: 8086, dev_device: a360
+[    0.129555] pci_setup_device -- functionpoint
+[    0.129568] pci 0000:00:16.0: [8086:a360] type 00 class 0x078000
+[    0.129571] pci 0000:00:16.0: functionpoint -- [8086:a360] type 00 class 0x078000
+[    0.129586] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.129603] pci 0000:00:16.0: reg 0x10: [mem 0x4000105000-0x4000105fff 64bit]
+[    0.129645] pci_device_add -- functionpoint
+[    0.129694] pci 0000:00:16.0: PME# supported from D3hot
+[    0.130754] functionpoint -- fn = 0, devfn = 176, fn+devfn = 176
+[    0.130756] next_fn -- functionpoint
+[    0.130756] pci_scan_single_device -- functionpoint
+[    0.130757] pci_get_slot -- functionpoint
+[    0.130759] pci_scan_device -- functionpoint
+[    0.130760] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.130772] functionpoint -- fn = 1, devfn = 176, fn+devfn = 177
+[    0.130774] next_fn -- functionpoint
+[    0.130774] pci_scan_single_device -- functionpoint
+[    0.130776] pci_get_slot -- functionpoint
+[    0.130777] pci_scan_device -- functionpoint
+[    0.130778] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.130797] functionpoint -- fn = 2, devfn = 176, fn+devfn = 178
+[    0.130799] next_fn -- functionpoint
+[    0.130800] pci_scan_single_device -- functionpoint
+[    0.130801] pci_get_slot -- functionpoint
+[    0.130802] pci_scan_device -- functionpoint
+[    0.130804] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.130815] functionpoint -- dev_vendor: 8086, dev_device: a363
+[    0.130818] pci_setup_device -- functionpoint
+[    0.130829] pci 0000:00:16.3: [8086:a363] type 00 class 0x070002
+[    0.130831] pci 0000:00:16.3: functionpoint -- [8086:a363] type 00 class 0x070002
+[    0.130845] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.130856] pci 0000:00:16.3: reg 0x10: [io  0x4088-0x408f]
+[    0.130866] pci 0000:00:16.3: reg 0x14: [mem 0xf1237000-0xf1237fff]
+[    0.130905] pci_device_add -- functionpoint
+[    0.131943] functionpoint -- fn = 3, devfn = 176, fn+devfn = 179
+[    0.131946] next_fn -- functionpoint
+[    0.131946] pci_scan_single_device -- functionpoint
+[    0.131947] pci_get_slot -- functionpoint
+[    0.131949] pci_scan_device -- functionpoint
+[    0.131950] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.131961] functionpoint -- fn = 4, devfn = 176, fn+devfn = 180
+[    0.131964] next_fn -- functionpoint
+[    0.131964] pci_scan_single_device -- functionpoint
+[    0.131965] pci_get_slot -- functionpoint
+[    0.131967] pci_scan_device -- functionpoint
+[    0.131968] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.131986] functionpoint -- fn = 5, devfn = 176, fn+devfn = 181
+[    0.131989] next_fn -- functionpoint
+[    0.131989] pci_scan_single_device -- functionpoint
+[    0.131990] pci_get_slot -- functionpoint
+[    0.131992] pci_scan_device -- functionpoint
+[    0.131993] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.132001] functionpoint -- fn = 6, devfn = 176, fn+devfn = 182
+[    0.132004] next_fn -- functionpoint
+[    0.132004] pci_scan_single_device -- functionpoint
+[    0.132005] pci_get_slot -- functionpoint
+[    0.132007] pci_scan_device -- functionpoint
+[    0.132008] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.132024] functionpoint -- fn = 7, devfn = 176, fn+devfn = 183
+[    0.132026] next_fn -- functionpoint
+[    0.132026] pci_scan_slot -- functionpoint
+[    0.132028] pci_scan_single_device -- functionpoint
+[    0.132029] pci_get_slot -- functionpoint
+[    0.132030] pci_scan_device -- functionpoint
+[    0.132032] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.132044] functionpoint -- dev_vendor: 8086, dev_device: a352
+[    0.132047] pci_setup_device -- functionpoint
+[    0.132060] pci 0000:00:17.0: [8086:a352] type 00 class 0x010601
+[    0.132062] pci 0000:00:17.0: functionpoint -- [8086:a352] type 00 class 0x010601
+[    0.132077] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.132091] pci 0000:00:17.0: reg 0x10: [mem 0xf1230000-0xf1231fff]
+[    0.132104] pci 0000:00:17.0: reg 0x14: [mem 0xf1236000-0xf12360ff]
+[    0.132115] pci 0000:00:17.0: reg 0x18: [io  0x4080-0x4087]
+[    0.132126] pci 0000:00:17.0: reg 0x1c: [io  0x4090-0x4093]
+[    0.132137] pci 0000:00:17.0: reg 0x20: [io  0x4060-0x407f]
+[    0.132148] pci 0000:00:17.0: reg 0x24: [mem 0xf1235000-0xf12357ff]
+[    0.132162] pci_device_add -- functionpoint
+[    0.132211] pci 0000:00:17.0: PME# supported from D3hot
+[    0.133300] functionpoint -- fn = 0, devfn = 184, fn+devfn = 184
+[    0.133302] next_fn -- functionpoint
+[    0.133302] pci_scan_slot -- functionpoint
+[    0.133304] pci_scan_single_device -- functionpoint
+[    0.133305] pci_get_slot -- functionpoint
+[    0.133306] pci_scan_device -- functionpoint
+[    0.133308] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.133319] functionpoint -- fn = 0, devfn = 192, fn+devfn = 192
+[    0.133321] pci_scan_slot -- functionpoint
+[    0.133322] pci_scan_single_device -- functionpoint
+[    0.133323] pci_get_slot -- functionpoint
+[    0.133324] pci_scan_device -- functionpoint
+[    0.133326] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.133344] functionpoint -- fn = 0, devfn = 200, fn+devfn = 200
+[    0.133346] pci_scan_slot -- functionpoint
+[    0.133347] pci_scan_single_device -- functionpoint
+[    0.133348] pci_get_slot -- functionpoint
+[    0.133349] pci_scan_device -- functionpoint
+[    0.133351] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.133369] functionpoint -- fn = 0, devfn = 208, fn+devfn = 208
+[    0.133371] pci_scan_slot -- functionpoint
+[    0.133372] pci_scan_single_device -- functionpoint
+[    0.133373] pci_get_slot -- functionpoint
+[    0.133374] pci_scan_device -- functionpoint
+[    0.133376] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.133387] functionpoint -- dev_vendor: 8086, dev_device: a32c
+[    0.133390] pci_setup_device -- functionpoint
+[    0.133402] pci 0000:00:1b.0: [8086:a32c] type 01 class 0x060400
+[    0.133405] pci 0000:00:1b.0: functionpoint -- [8086:a32c] type 01 class 0x060400
+[    0.133423] switch case PCI_HEADER_TYPE_BRIDGE -- functionpoint
+[    0.133469] pci_device_add -- functionpoint
+[    0.133552] pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+[    0.133586] pci 0000:00:1b.0: PTM enabled (root), 4dns granularity
+[    0.134668] functionpoint -- fn = 0, devfn = 216, fn+devfn = 216
+[    0.134670] next_fn -- functionpoint
+[    0.134670] pci_scan_single_device -- functionpoint
+[    0.134671] pci_get_slot -- functionpoint
+[    0.134673] pci_scan_device -- functionpoint
+[    0.134674] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134683] functionpoint -- fn = 1, devfn = 216, fn+devfn = 217
+[    0.134686] next_fn -- functionpoint
+[    0.134686] pci_scan_single_device -- functionpoint
+[    0.134687] pci_get_slot -- functionpoint
+[    0.134689] pci_scan_device -- functionpoint
+[    0.134690] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134708] functionpoint -- fn = 2, devfn = 216, fn+devfn = 218
+[    0.134711] next_fn -- functionpoint
+[    0.134711] pci_scan_single_device -- functionpoint
+[    0.134713] pci_get_slot -- functionpoint
+[    0.134714] pci_scan_device -- functionpoint
+[    0.134715] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134733] functionpoint -- fn = 3, devfn = 216, fn+devfn = 219
+[    0.134736] next_fn -- functionpoint
+[    0.134736] pci_scan_single_device -- functionpoint
+[    0.134738] pci_get_slot -- functionpoint
+[    0.134739] pci_scan_device -- functionpoint
+[    0.134740] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134758] functionpoint -- fn = 4, devfn = 216, fn+devfn = 220
+[    0.134761] next_fn -- functionpoint
+[    0.134761] pci_scan_single_device -- functionpoint
+[    0.134763] pci_get_slot -- functionpoint
+[    0.134764] pci_scan_device -- functionpoint
+[    0.134765] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134783] functionpoint -- fn = 5, devfn = 216, fn+devfn = 221
+[    0.134786] next_fn -- functionpoint
+[    0.134786] pci_scan_single_device -- functionpoint
+[    0.134788] pci_get_slot -- functionpoint
+[    0.134789] pci_scan_device -- functionpoint
+[    0.134790] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134799] functionpoint -- fn = 6, devfn = 216, fn+devfn = 222
+[    0.134801] next_fn -- functionpoint
+[    0.134802] pci_scan_single_device -- functionpoint
+[    0.134803] pci_get_slot -- functionpoint
+[    0.134804] pci_scan_device -- functionpoint
+[    0.134806] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134824] functionpoint -- fn = 7, devfn = 216, fn+devfn = 223
+[    0.134827] next_fn -- functionpoint
+[    0.134827] pci_scan_slot -- functionpoint
+[    0.134828] pci_scan_single_device -- functionpoint
+[    0.134830] pci_get_slot -- functionpoint
+[    0.134831] pci_scan_device -- functionpoint
+[    0.134832] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.134841] functionpoint -- dev_vendor: 8086, dev_device: a33e
+[    0.134843] pci_setup_device -- functionpoint
+[    0.134856] pci 0000:00:1c.0: [8086:a33e] type 01 class 0x060400
+[    0.134858] pci 0000:00:1c.0: functionpoint -- [8086:a33e] type 01 class 0x060400
+[    0.134877] switch case PCI_HEADER_TYPE_BRIDGE -- functionpoint
+[    0.134922] pci_device_add -- functionpoint
+[    0.135005] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.135040] pci 0000:00:1c.0: PTM enabled (root), 4dns granularity
+[    0.136120] functionpoint -- fn = 0, devfn = 224, fn+devfn = 224
+[    0.136122] next_fn -- functionpoint
+[    0.136122] pci_scan_single_device -- functionpoint
+[    0.136123] pci_get_slot -- functionpoint
+[    0.136125] pci_scan_device -- functionpoint
+[    0.136126] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136138] functionpoint -- fn = 1, devfn = 224, fn+devfn = 225
+[    0.136141] next_fn -- functionpoint
+[    0.136141] pci_scan_single_device -- functionpoint
+[    0.136142] pci_get_slot -- functionpoint
+[    0.136144] pci_scan_device -- functionpoint
+[    0.136145] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136154] functionpoint -- fn = 2, devfn = 224, fn+devfn = 226
+[    0.136156] next_fn -- functionpoint
+[    0.136156] pci_scan_single_device -- functionpoint
+[    0.136158] pci_get_slot -- functionpoint
+[    0.136159] pci_scan_device -- functionpoint
+[    0.136160] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136179] functionpoint -- fn = 3, devfn = 224, fn+devfn = 227
+[    0.136181] next_fn -- functionpoint
+[    0.136182] pci_scan_single_device -- functionpoint
+[    0.136183] pci_get_slot -- functionpoint
+[    0.136185] pci_scan_device -- functionpoint
+[    0.136186] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136204] functionpoint -- fn = 4, devfn = 224, fn+devfn = 228
+[    0.136206] next_fn -- functionpoint
+[    0.136207] pci_scan_single_device -- functionpoint
+[    0.136208] pci_get_slot -- functionpoint
+[    0.136209] pci_scan_device -- functionpoint
+[    0.136211] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136229] functionpoint -- fn = 5, devfn = 224, fn+devfn = 229
+[    0.136231] next_fn -- functionpoint
+[    0.136232] pci_scan_single_device -- functionpoint
+[    0.136233] pci_get_slot -- functionpoint
+[    0.136234] pci_scan_device -- functionpoint
+[    0.136236] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136244] functionpoint -- fn = 6, devfn = 224, fn+devfn = 230
+[    0.136247] next_fn -- functionpoint
+[    0.136247] pci_scan_single_device -- functionpoint
+[    0.136248] pci_get_slot -- functionpoint
+[    0.136250] pci_scan_device -- functionpoint
+[    0.136251] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136270] functionpoint -- fn = 7, devfn = 224, fn+devfn = 231
+[    0.136272] next_fn -- functionpoint
+[    0.136273] pci_scan_slot -- functionpoint
+[    0.136274] pci_scan_single_device -- functionpoint
+[    0.136275] pci_get_slot -- functionpoint
+[    0.136277] pci_scan_device -- functionpoint
+[    0.136278] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136295] functionpoint -- fn = 0, devfn = 232, fn+devfn = 232
+[    0.136297] pci_scan_slot -- functionpoint
+[    0.136298] pci_scan_single_device -- functionpoint
+[    0.136299] pci_get_slot -- functionpoint
+[    0.136300] pci_scan_device -- functionpoint
+[    0.136302] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136305] functionpoint -- fn = 0, devfn = 240, fn+devfn = 240
+[    0.136307] pci_scan_slot -- functionpoint
+[    0.136307] pci_scan_single_device -- functionpoint
+[    0.136309] pci_get_slot -- functionpoint
+[    0.136310] pci_scan_device -- functionpoint
+[    0.136311] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.136319] functionpoint -- dev_vendor: 8086, dev_device: a306
+[    0.136322] pci_setup_device -- functionpoint
+[    0.136329] pci 0000:00:1f.0: [8086:a306] type 00 class 0x060100
+[    0.136331] pci 0000:00:1f.0: functionpoint -- [8086:a306] type 00 class 0x060100
+[    0.136340] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.136417] pci_device_add -- functionpoint
+[    0.137458] functionpoint -- fn = 0, devfn = 248, fn+devfn = 248
+[    0.137461] next_fn -- functionpoint
+[    0.137461] pci_scan_single_device -- functionpoint
+[    0.137462] pci_get_slot -- functionpoint
+[    0.137464] pci_scan_device -- functionpoint
+[    0.137465] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.137476] functionpoint -- fn = 1, devfn = 248, fn+devfn = 249
+[    0.137479] next_fn -- functionpoint
+[    0.137479] pci_scan_single_device -- functionpoint
+[    0.137480] pci_get_slot -- functionpoint
+[    0.137482] pci_scan_device -- functionpoint
+[    0.137483] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.137501] functionpoint -- fn = 2, devfn = 248, fn+devfn = 250
+[    0.137504] next_fn -- functionpoint
+[    0.137504] pci_scan_single_device -- functionpoint
+[    0.137505] pci_get_slot -- functionpoint
+[    0.137507] pci_scan_device -- functionpoint
+[    0.137508] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.137522] functionpoint -- dev_vendor: 8086, dev_device: a348
+[    0.137524] pci_setup_device -- functionpoint
+[    0.137550] pci 0000:00:1f.3: [8086:a348] type 00 class 0x040300
+[    0.137552] pci 0000:00:1f.3: functionpoint -- [8086:a348] type 00 class 0x040300
+[    0.137585] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.137627] pci 0000:00:1f.3: reg 0x10: [mem 0x4000100000-0x4000103fff 64bit]
+[    0.137695] pci 0000:00:1f.3: reg 0x20: [mem 0x4000000000-0x40000fffff 64bit]
+[    0.137718] pci_device_add -- functionpoint
+[    0.137826] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.138965] functionpoint -- fn = 3, devfn = 248, fn+devfn = 251
+[    0.138967] next_fn -- functionpoint
+[    0.138967] pci_scan_single_device -- functionpoint
+[    0.138968] pci_get_slot -- functionpoint
+[    0.138970] pci_scan_device -- functionpoint
+[    0.138971] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.138983] functionpoint -- dev_vendor: 8086, dev_device: a323
+[    0.138986] pci_setup_device -- functionpoint
+[    0.139006] pci 0000:00:1f.4: [8086:a323] type 00 class 0x0c0500
+[    0.139008] pci 0000:00:1f.4: functionpoint -- [8086:a323] type 00 class 0x0c0500
+[    0.139024] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.139061] pci 0000:00:1f.4: reg 0x10: [mem 0x4000104000-0x40001040ff 64bit]
+[    0.139126] pci 0000:00:1f.4: reg 0x20: [io  0xefa0-0xefbf]
+[    0.139173] pci_device_add -- functionpoint
+[    0.140231] functionpoint -- fn = 4, devfn = 248, fn+devfn = 252
+[    0.140234] next_fn -- functionpoint
+[    0.140235] pci_scan_single_device -- functionpoint
+[    0.140236] pci_get_slot -- functionpoint
+[    0.140238] pci_scan_device -- functionpoint
+[    0.140239] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.140247] functionpoint -- dev_vendor: 8086, dev_device: a324
+[    0.140250] pci_setup_device -- functionpoint
+[    0.140255] pci 0000:00:1f.5: [8086:a324] type 00 class 0x0c8000
+[    0.140258] pci 0000:00:1f.5: functionpoint -- [8086:a324] type 00 class 0x0c8000
+[    0.140265] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.140277] pci 0000:00:1f.5: reg 0x10: [mem 0xfe010000-0xfe010fff]
+[    0.140329] pci_device_add -- functionpoint
+[    0.141333] functionpoint -- fn = 5, devfn = 248, fn+devfn = 253
+[    0.141336] next_fn -- functionpoint
+[    0.141336] pci_scan_single_device -- functionpoint
+[    0.141338] pci_get_slot -- functionpoint
+[    0.141339] pci_scan_device -- functionpoint
+[    0.141341] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.141345] functionpoint -- dev_vendor: 8086, dev_device: 15bb
+[    0.141347] pci_setup_device -- functionpoint
+[    0.141367] pci 0000:00:1f.6: [8086:15bb] type 00 class 0x020000
+[    0.141370] pci 0000:00:1f.6: functionpoint -- [8086:15bb] type 00 class 0x020000
+[    0.141382] pci_get_slot -- functionpoint
+[    0.141395] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.141417] pci 0000:00:1f.6: reg 0x10: [mem 0xf1200000-0xf121ffff]
+[    0.141565] pci_device_add -- functionpoint
+[    0.141657] pci 0000:00:1f.6: PME# supported from D0 D3hot D3cold
+[    0.142666] functionpoint -- fn = 6, devfn = 248, fn+devfn = 254
+[    0.142668] next_fn -- functionpoint
+[    0.142668] pci_scan_single_device -- functionpoint
+[    0.142670] pci_get_slot -- functionpoint
+[    0.142671] pci_scan_device -- functionpoint
+[    0.142673] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.142681] functionpoint -- fn = 7, devfn = 248, fn+devfn = 255
+[    0.142684] next_fn -- functionpoint
+[    0.142685] pci_read_bridge_bases -- functionpoint
+[    0.142692] pci_find_bus -- functionpoint
+[    0.142694] functionpoint -- domain_num = 0, bus_num = 1
+[    0.142697] pci_find_next_bus -- functionpoint
+[    0.142697] pci_find_next_bus -- functionpoint
+[    0.142698] not found bus -- functionpoint
+[    0.142754] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.142766] pci_scan_child_bus_extend -- functionpoint
+[    0.142768] pci_bus 0000:01: functionpoint -- scanning bus
+[    0.142771] pci_scan_slot -- functionpoint
+[    0.142771] pci_scan_single_device -- functionpoint
+[    0.142772] pci_get_slot -- functionpoint
+[    0.142774] pci_scan_device -- functionpoint
+[    0.142775] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.142778] functionpoint -- dev_vendor: 1c5c, dev_device: 1339
+[    0.142780] pci_setup_device -- functionpoint
+[    0.142798] pci 0000:01:00.0: [1c5c:1339] type 00 class 0x010802
+[    0.142801] pci 0000:01:00.0: functionpoint -- [1c5c:1339] type 00 class 0x010802
+[    0.142829] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.142851] pci 0000:01:00.0: reg 0x10: [mem 0xf1100000-0xf1103fff 64bit]
+[    0.142913] pci_device_add -- functionpoint
+[    0.143013] pci 0000:01:00.0: supports D1
+[    0.143016] pci 0000:01:00.0: PME# supported from D0 D1 D3hot
+[    0.143111] functionpoint -- fn = 0, devfn = 0, fn+devfn = 0
+[    0.143113] next_fn -- functionpoint
+[    0.152043] pci_scan_slot -- functionpoint
+[    0.152044] pci_scan_slot -- functionpoint
+[    0.152046] pci_scan_slot -- functionpoint
+[    0.152047] pci_scan_slot -- functionpoint
+[    0.152048] pci_scan_slot -- functionpoint
+[    0.152049] pci_scan_slot -- functionpoint
+[    0.152051] pci_scan_slot -- functionpoint
+[    0.152052] pci_scan_slot -- functionpoint
+[    0.152053] pci_scan_slot -- functionpoint
+[    0.152055] pci_scan_slot -- functionpoint
+[    0.152056] pci_scan_slot -- functionpoint
+[    0.152057] pci_scan_slot -- functionpoint
+[    0.152058] pci_scan_slot -- functionpoint
+[    0.152060] pci_scan_slot -- functionpoint
+[    0.152061] pci_scan_slot -- functionpoint
+[    0.152062] pci_scan_slot -- functionpoint
+[    0.152064] pci_scan_slot -- functionpoint
+[    0.152065] pci_scan_slot -- functionpoint
+[    0.152066] pci_scan_slot -- functionpoint
+[    0.152067] pci_scan_slot -- functionpoint
+[    0.152069] pci_scan_slot -- functionpoint
+[    0.152070] pci_scan_slot -- functionpoint
+[    0.152071] pci_scan_slot -- functionpoint
+[    0.152073] pci_scan_slot -- functionpoint
+[    0.152074] pci_scan_slot -- functionpoint
+[    0.152075] pci_scan_slot -- functionpoint
+[    0.152077] pci_scan_slot -- functionpoint
+[    0.152078] pci_scan_slot -- functionpoint
+[    0.152079] pci_scan_slot -- functionpoint
+[    0.152080] pci_scan_slot -- functionpoint
+[    0.152082] pci_scan_slot -- functionpoint
+[    0.152083] pci_read_bridge_bases -- functionpoint
+[    0.152085] pci 0000:00:1b.0: PCI bridge to [bus 01]
+[    0.152098] pci 0000:00:1b.0:   bridge window [mem 0xf1100000-0xf11fffff]
+[    0.152105] pci_bus 0000:01: functionpoint -- bus scan returning with max=01
+[    0.152114] pci_find_bus -- functionpoint
+[    0.152115] functionpoint -- domain_num = 0, bus_num = 2
+[    0.152117] pci_find_next_bus -- functionpoint
+[    0.152118] pci_find_next_bus -- functionpoint
+[    0.152119] not found bus -- functionpoint
+[    0.152166] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.152176] pci_scan_child_bus_extend -- functionpoint
+[    0.152178] pci_bus 0000:02: functionpoint -- scanning bus
+[    0.152181] pci_scan_slot -- functionpoint
+[    0.152181] pci_scan_single_device -- functionpoint
+[    0.152182] pci_get_slot -- functionpoint
+[    0.152184] pci_scan_device -- functionpoint
+[    0.152185] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.152198] functionpoint -- dev_vendor: 1283, dev_device: 8893
+[    0.152201] pci_setup_device -- functionpoint
+[    0.152239] pci 0000:02:00.0: [1283:8893] type 01 class 0x060401
+[    0.152241] pci 0000:02:00.0: functionpoint -- [1283:8893] type 01 class 0x060401
+[    0.152298] switch case PCI_HEADER_TYPE_BRIDGE -- functionpoint
+[    0.152493] pci_device_add -- functionpoint
+[    0.152664] pci 0000:02:00.0: supports D1 D2
+[    0.152666] pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.152782] functionpoint -- fn = 0, devfn = 0, fn+devfn = 0
+[    0.152784] next_fn -- functionpoint
+[    0.152792] pci_scan_slot -- functionpoint
+[    0.152793] pci_scan_slot -- functionpoint
+[    0.152795] pci_scan_slot -- functionpoint
+[    0.152796] pci_scan_slot -- functionpoint
+[    0.152797] pci_scan_slot -- functionpoint
+[    0.152798] pci_scan_slot -- functionpoint
+[    0.152800] pci_scan_slot -- functionpoint
+[    0.152801] pci_scan_slot -- functionpoint
+[    0.152802] pci_scan_slot -- functionpoint
+[    0.152803] pci_scan_slot -- functionpoint
+[    0.152805] pci_scan_slot -- functionpoint
+[    0.152806] pci_scan_slot -- functionpoint
+[    0.152807] pci_scan_slot -- functionpoint
+[    0.152809] pci_scan_slot -- functionpoint
+[    0.152810] pci_scan_slot -- functionpoint
+[    0.152811] pci_scan_slot -- functionpoint
+[    0.152812] pci_scan_slot -- functionpoint
+[    0.152814] pci_scan_slot -- functionpoint
+[    0.152815] pci_scan_slot -- functionpoint
+[    0.152816] pci_scan_slot -- functionpoint
+[    0.152818] pci_scan_slot -- functionpoint
+[    0.152819] pci_scan_slot -- functionpoint
+[    0.152820] pci_scan_slot -- functionpoint
+[    0.152821] pci_scan_slot -- functionpoint
+[    0.152823] pci_scan_slot -- functionpoint
+[    0.152824] pci_scan_slot -- functionpoint
+[    0.152825] pci_scan_slot -- functionpoint
+[    0.152826] pci_scan_slot -- functionpoint
+[    0.152828] pci_scan_slot -- functionpoint
+[    0.152829] pci_scan_slot -- functionpoint
+[    0.152830] pci_scan_slot -- functionpoint
+[    0.152832] pci_read_bridge_bases -- functionpoint
+[    0.152834] pci 0000:00:1c.0: PCI bridge to [bus 02-03]
+[    0.152843] pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+[    0.152847] pci 0000:00:1c.0:   bridge window [mem 0xf1000000-0xf10fffff]
+[    0.152861] pci_find_bus -- functionpoint
+[    0.152862] functionpoint -- domain_num = 0, bus_num = 3
+[    0.152864] pci_find_next_bus -- functionpoint
+[    0.152865] pci_find_next_bus -- functionpoint
+[    0.152866] not found bus -- functionpoint
+[    0.152912] pci_scan_child_bus_extend -- functionpoint
+[    0.152914] pci_bus 0000:03: functionpoint -- scanning bus
+[    0.152916] pci_scan_slot -- functionpoint
+[    0.152917] pci_scan_single_device -- functionpoint
+[    0.152918] pci_get_slot -- functionpoint
+[    0.152919] pci_scan_device -- functionpoint
+[    0.152921] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.152930] functionpoint -- dev_vendor: 1317, dev_device: 985
+[    0.152932] pci_setup_device -- functionpoint
+[    0.152950] pci 0000:03:00.0: [1317:0985] type 00 class 0x020000
+[    0.152952] pci 0000:03:00.0: functionpoint -- [1317:0985] type 00 class 0x020000
+[    0.152976] switch case PCI_HEADER_TYPE_NORMAL -- functionpoint
+[    0.152998] pci 0000:03:00.0: reg 0x10: [io  0x3000-0x30ff]
+[    0.153016] pci 0000:03:00.0: reg 0x14: [mem 0xf1000000-0xf10003ff]
+[    0.153093] pci 0000:03:00.0: reg 0x30: [mem 0xfffe0000-0xffffffff pref]
+[    0.153099] pci_device_add -- functionpoint
+[    0.153165] pci 0000:03:00.0: supports D1 D2
+[    0.153167] pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.153202] functionpoint -- fn = 0, devfn = 0, fn+devfn = 0
+[    0.153204] next_fn -- functionpoint
+[    0.153204] pci_scan_slot -- functionpoint
+[    0.153206] pci_scan_single_device -- functionpoint
+[    0.153207] pci_get_slot -- functionpoint
+[    0.153208] pci_scan_device -- functionpoint
+[    0.153210] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153219] functionpoint -- fn = 0, devfn = 8, fn+devfn = 8
+[    0.153221] pci_scan_slot -- functionpoint
+[    0.153222] pci_scan_single_device -- functionpoint
+[    0.153223] pci_get_slot -- functionpoint
+[    0.153224] pci_scan_device -- functionpoint
+[    0.153226] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153237] functionpoint -- fn = 0, devfn = 16, fn+devfn = 16
+[    0.153239] pci_scan_slot -- functionpoint
+[    0.153239] pci_scan_single_device -- functionpoint
+[    0.153241] pci_get_slot -- functionpoint
+[    0.153242] pci_scan_device -- functionpoint
+[    0.153243] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153248] functionpoint -- fn = 0, devfn = 24, fn+devfn = 24
+[    0.153250] pci_scan_slot -- functionpoint
+[    0.153251] pci_scan_single_device -- functionpoint
+[    0.153252] pci_get_slot -- functionpoint
+[    0.153253] pci_scan_device -- functionpoint
+[    0.153255] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153266] functionpoint -- fn = 0, devfn = 32, fn+devfn = 32
+[    0.153268] pci_scan_slot -- functionpoint
+[    0.153268] pci_scan_single_device -- functionpoint
+[    0.153270] pci_get_slot -- functionpoint
+[    0.153271] pci_scan_device -- functionpoint
+[    0.153272] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153277] functionpoint -- fn = 0, devfn = 40, fn+devfn = 40
+[    0.153280] pci_scan_slot -- functionpoint
+[    0.153280] pci_scan_single_device -- functionpoint
+[    0.153281] pci_get_slot -- functionpoint
+[    0.153283] pci_scan_device -- functionpoint
+[    0.153284] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153295] functionpoint -- fn = 0, devfn = 48, fn+devfn = 48
+[    0.153297] pci_scan_slot -- functionpoint
+[    0.153298] pci_scan_single_device -- functionpoint
+[    0.153299] pci_get_slot -- functionpoint
+[    0.153300] pci_scan_device -- functionpoint
+[    0.153301] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153306] functionpoint -- fn = 0, devfn = 56, fn+devfn = 56
+[    0.153309] pci_scan_slot -- functionpoint
+[    0.153309] pci_scan_single_device -- functionpoint
+[    0.153310] pci_get_slot -- functionpoint
+[    0.153312] pci_scan_device -- functionpoint
+[    0.153313] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153324] functionpoint -- fn = 0, devfn = 64, fn+devfn = 64
+[    0.153326] pci_scan_slot -- functionpoint
+[    0.153327] pci_scan_single_device -- functionpoint
+[    0.153328] pci_get_slot -- functionpoint
+[    0.153329] pci_scan_device -- functionpoint
+[    0.153331] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153335] functionpoint -- fn = 0, devfn = 72, fn+devfn = 72
+[    0.153338] pci_scan_slot -- functionpoint
+[    0.153338] pci_scan_single_device -- functionpoint
+[    0.153339] pci_get_slot -- functionpoint
+[    0.153341] pci_scan_device -- functionpoint
+[    0.153342] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153353] functionpoint -- fn = 0, devfn = 80, fn+devfn = 80
+[    0.153356] pci_scan_slot -- functionpoint
+[    0.153356] pci_scan_single_device -- functionpoint
+[    0.153357] pci_get_slot -- functionpoint
+[    0.153359] pci_scan_device -- functionpoint
+[    0.153360] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153364] functionpoint -- fn = 0, devfn = 88, fn+devfn = 88
+[    0.153367] pci_scan_slot -- functionpoint
+[    0.153367] pci_scan_single_device -- functionpoint
+[    0.153369] pci_get_slot -- functionpoint
+[    0.153370] pci_scan_device -- functionpoint
+[    0.153371] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153376] functionpoint -- fn = 0, devfn = 96, fn+devfn = 96
+[    0.153378] pci_scan_slot -- functionpoint
+[    0.153379] pci_scan_single_device -- functionpoint
+[    0.153380] pci_get_slot -- functionpoint
+[    0.153381] pci_scan_device -- functionpoint
+[    0.153383] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153387] functionpoint -- fn = 0, devfn = 104, fn+devfn = 104
+[    0.153390] pci_scan_slot -- functionpoint
+[    0.153390] pci_scan_single_device -- functionpoint
+[    0.153391] pci_get_slot -- functionpoint
+[    0.153393] pci_scan_device -- functionpoint
+[    0.153394] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153407] functionpoint -- fn = 0, devfn = 112, fn+devfn = 112
+[    0.153409] pci_scan_slot -- functionpoint
+[    0.153410] pci_scan_single_device -- functionpoint
+[    0.153411] pci_get_slot -- functionpoint
+[    0.153412] pci_scan_device -- functionpoint
+[    0.153414] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153418] functionpoint -- fn = 0, devfn = 120, fn+devfn = 120
+[    0.153421] pci_scan_slot -- functionpoint
+[    0.153421] pci_scan_single_device -- functionpoint
+[    0.153422] pci_get_slot -- functionpoint
+[    0.153424] pci_scan_device -- functionpoint
+[    0.153425] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153436] functionpoint -- fn = 0, devfn = 128, fn+devfn = 128
+[    0.153439] pci_scan_slot -- functionpoint
+[    0.153439] pci_scan_single_device -- functionpoint
+[    0.153441] pci_get_slot -- functionpoint
+[    0.153442] pci_scan_device -- functionpoint
+[    0.153443] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153448] functionpoint -- fn = 0, devfn = 136, fn+devfn = 136
+[    0.153450] pci_scan_slot -- functionpoint
+[    0.153451] pci_scan_single_device -- functionpoint
+[    0.153452] pci_get_slot -- functionpoint
+[    0.153453] pci_scan_device -- functionpoint
+[    0.153455] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153467] functionpoint -- fn = 0, devfn = 144, fn+devfn = 144
+[    0.153470] pci_scan_slot -- functionpoint
+[    0.153470] pci_scan_single_device -- functionpoint
+[    0.153471] pci_get_slot -- functionpoint
+[    0.153473] pci_scan_device -- functionpoint
+[    0.153474] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153478] functionpoint -- fn = 0, devfn = 152, fn+devfn = 152
+[    0.153481] pci_scan_slot -- functionpoint
+[    0.153481] pci_scan_single_device -- functionpoint
+[    0.153483] pci_get_slot -- functionpoint
+[    0.153484] pci_scan_device -- functionpoint
+[    0.153485] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153497] functionpoint -- fn = 0, devfn = 160, fn+devfn = 160
+[    0.153499] pci_scan_slot -- functionpoint
+[    0.153500] pci_scan_single_device -- functionpoint
+[    0.153501] pci_get_slot -- functionpoint
+[    0.153502] pci_scan_device -- functionpoint
+[    0.153504] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153508] functionpoint -- fn = 0, devfn = 168, fn+devfn = 168
+[    0.153511] pci_scan_slot -- functionpoint
+[    0.153511] pci_scan_single_device -- functionpoint
+[    0.153512] pci_get_slot -- functionpoint
+[    0.153514] pci_scan_device -- functionpoint
+[    0.153515] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153526] functionpoint -- fn = 0, devfn = 176, fn+devfn = 176
+[    0.153529] pci_scan_slot -- functionpoint
+[    0.153529] pci_scan_single_device -- functionpoint
+[    0.153530] pci_get_slot -- functionpoint
+[    0.153532] pci_scan_device -- functionpoint
+[    0.153533] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153537] functionpoint -- fn = 0, devfn = 184, fn+devfn = 184
+[    0.153540] pci_scan_slot -- functionpoint
+[    0.153540] pci_scan_single_device -- functionpoint
+[    0.153542] pci_get_slot -- functionpoint
+[    0.153543] pci_scan_device -- functionpoint
+[    0.153544] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153557] functionpoint -- fn = 0, devfn = 192, fn+devfn = 192
+[    0.153559] pci_scan_slot -- functionpoint
+[    0.153560] pci_scan_single_device -- functionpoint
+[    0.153561] pci_get_slot -- functionpoint
+[    0.153562] pci_scan_device -- functionpoint
+[    0.153563] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153568] functionpoint -- fn = 0, devfn = 200, fn+devfn = 200
+[    0.153571] pci_scan_slot -- functionpoint
+[    0.153571] pci_scan_single_device -- functionpoint
+[    0.153572] pci_get_slot -- functionpoint
+[    0.153574] pci_scan_device -- functionpoint
+[    0.153575] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153588] functionpoint -- fn = 0, devfn = 208, fn+devfn = 208
+[    0.153590] pci_scan_slot -- functionpoint
+[    0.153591] pci_scan_single_device -- functionpoint
+[    0.153592] pci_get_slot -- functionpoint
+[    0.153594] pci_scan_device -- functionpoint
+[    0.153595] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153599] functionpoint -- fn = 0, devfn = 216, fn+devfn = 216
+[    0.153602] pci_scan_slot -- functionpoint
+[    0.153602] pci_scan_single_device -- functionpoint
+[    0.153604] pci_get_slot -- functionpoint
+[    0.153605] pci_scan_device -- functionpoint
+[    0.153606] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153618] functionpoint -- fn = 0, devfn = 224, fn+devfn = 224
+[    0.153620] pci_scan_slot -- functionpoint
+[    0.153621] pci_scan_single_device -- functionpoint
+[    0.153622] pci_get_slot -- functionpoint
+[    0.153623] pci_scan_device -- functionpoint
+[    0.153624] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153629] functionpoint -- fn = 0, devfn = 232, fn+devfn = 232
+[    0.153632] pci_scan_slot -- functionpoint
+[    0.153632] pci_scan_single_device -- functionpoint
+[    0.153633] pci_get_slot -- functionpoint
+[    0.153635] pci_scan_device -- functionpoint
+[    0.153636] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153647] functionpoint -- fn = 0, devfn = 240, fn+devfn = 240
+[    0.153649] pci_scan_slot -- functionpoint
+[    0.153650] pci_scan_single_device -- functionpoint
+[    0.153651] pci_get_slot -- functionpoint
+[    0.153652] pci_scan_device -- functionpoint
+[    0.153654] pci_bus_read_dev_vendor_id -- functionpoint
+[    0.153658] functionpoint -- fn = 0, devfn = 248, fn+devfn = 248
+[    0.153661] pci_read_bridge_bases -- functionpoint
+[    0.153662] pci 0000:02:00.0: PCI bridge to [bus 03] (subtractive decode)
+[    0.153676] pci 0000:02:00.0:   bridge window [io  0x3000-0x3fff]
+[    0.153682] pci 0000:02:00.0:   bridge window [mem 0xf1000000-0xf10fffff]
+[    0.153695] pci 0000:02:00.0:   bridge window [io  0x3000-0x3fff] (subtractive decode)
+[    0.153696] pci 0000:02:00.0:   bridge window [mem 0xf1000000-0xf10fffff] (subtractive decode)
+[    0.153697] pci_bus 0000:03: functionpoint -- bus scan returning with max=03
+[    0.153715] pci_bus 0000:02: functionpoint -- bus scan returning with max=03
+[    0.153734] pci_bus 0000:00: functionpoint -- bus scan returning with max=03
+[    0.156046] driver_register -- functionpoint
+[    0.156047] bus_add_driver -- functionpoint
+[    0.156049] functionpoint -- bus: 'acpi': add driver ec
+[    0.156056] really_probe -- functionpoint
+[    0.156057] functionpoint -- bus: 'acpi': really_probe: probing driver ec with device PNP0C09:01
+[    0.156071] ACPI: EC: interrupt unblocked
+[    0.156081] ACPI: EC: event unblocked
+[    0.156099] ACPI: \_SB_.PCI0.LPCB.EC0_: GPE=0x6e, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[    0.156100] ACPI: \_SB_.PCI0.LPCB.EC0_: Used as boot DSDT EC to handle transactions and events
+[    0.156152] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.156152] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.156152] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.156152] vgaarb: loaded
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver 88PM860x
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver WM8400
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver wm831x
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'spi': add driver wm831x
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver wm8350
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver tps65910
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver tps80031
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'spi': add driver ezx-pcap
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver da903x
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'spi': add driver da9052
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver da9052
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver lp8788
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver da9055-pmic
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver max77843
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver max8925
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver max8997
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver max8998
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver ab3100
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver tps6586x
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver tps65090
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156152] functionpoint -- bus: 'i2c': add driver aat2870
+[    0.156152] driver_register -- functionpoint
+[    0.156152] bus_add_driver -- functionpoint
+[    0.156154] functionpoint -- bus: 'i2c': add driver palmas
+[    0.156158] driver_register -- functionpoint
+[    0.156158] bus_add_driver -- functionpoint
+[    0.156160] functionpoint -- bus: 'i2c': add driver rc5t583
+[    0.156164] driver_register -- functionpoint
+[    0.156165] bus_add_driver -- functionpoint
+[    0.156166] functionpoint -- bus: 'i2c': add driver sec_pmic
+[    0.156173] driver_register -- functionpoint
+[    0.156173] bus_add_driver -- functionpoint
+[    0.156175] functionpoint -- bus: 'i2c': add driver as3711
+[    0.156185] driver_register -- functionpoint
+[    0.156186] bus_add_driver -- functionpoint
+[    0.156187] functionpoint -- bus: 'nd': add driver nd_bus
+[    0.156193] driver_register -- functionpoint
+[    0.156193] bus_add_driver -- functionpoint
+[    0.156194] functionpoint -- bus: 'nd': add driver nvdimm
+[    0.156199] driver_register -- functionpoint
+[    0.156199] bus_add_driver -- functionpoint
+[    0.156201] functionpoint -- bus: 'nd': add driver nd_region
+[    0.156261] SCSI subsystem initialized
+[    0.156272] libata version 3.00 loaded.
+[    0.156272] driver_register -- functionpoint
+[    0.156272] bus_add_driver -- functionpoint
+[    0.156272] functionpoint -- bus: 'mdio_bus': add driver Generic 10G PHY
+[    0.156272] driver_register -- functionpoint
+[    0.156272] bus_add_driver -- functionpoint
+[    0.156272] functionpoint -- bus: 'mdio_bus': add driver Generic PHY
+[    0.156272] ACPI: bus type USB registered
+[    0.156272] driver_register -- functionpoint
+[    0.156272] bus_add_driver -- functionpoint
+[    0.156272] functionpoint -- bus: 'usb': add driver usbfs
+[    0.156272] usbcore: registered new interface driver usbfs
+[    0.156272] driver_register -- functionpoint
+[    0.156272] bus_add_driver -- functionpoint
+[    0.156272] functionpoint -- bus: 'usb': add driver hub
+[    0.156272] usbcore: registered new interface driver hub
+[    0.156272] driver_register -- functionpoint
+[    0.156272] bus_add_driver -- functionpoint
+[    0.156272] functionpoint -- bus: 'usb': add driver usb
+[    0.156272] usbcore: registered new device driver usb
+[    0.156272] driver_register -- functionpoint
+[    0.156272] bus_add_driver -- functionpoint
+[    0.156272] functionpoint -- bus: 'platform': add driver i2c_designware
+[    0.156272] EDAC MC: Ver: 3.0.0
+[    0.156272] Registered efivars operations
+[    0.188023] start pci_subsys_init -- functionpoint
+[    0.188024] PCI: Using ACPI for IRQ routing
+[    0.188026] pci_find_bus -- functionpoint
+[    0.188027] functionpoint -- domain_num = 0, bus_num = 0
+[    0.188029] pci_find_next_bus -- functionpoint
+[    0.188030] found bus -- functionpoint
+[    0.188031] pci_find_bus -- functionpoint
+[    0.188033] functionpoint -- domain_num = 0, bus_num = 1
+[    0.188035] pci_find_next_bus -- functionpoint
+[    0.188035] found bus -- functionpoint
+[    0.188037] pci_find_bus -- functionpoint
+[    0.188038] functionpoint -- domain_num = 0, bus_num = 2
+[    0.188041] pci_find_next_bus -- functionpoint
+[    0.188041] found bus -- functionpoint
+[    0.188042] pci_find_bus -- functionpoint
+[    0.188044] functionpoint -- domain_num = 0, bus_num = 3
+[    0.188046] pci_find_next_bus -- functionpoint
+[    0.188046] found bus -- functionpoint
+[    0.188048] pci_find_bus -- functionpoint
+[    0.188049] functionpoint -- domain_num = 0, bus_num = 4
+[    0.188052] pci_find_next_bus -- functionpoint
+[    0.188052] pci_find_next_bus -- functionpoint
+[    0.188053] not found bus -- functionpoint
+[    0.188385] pci_find_bus -- functionpoint
+[    0.188386] functionpoint -- domain_num = 0, bus_num = 5
+[    0.188389] pci_find_next_bus -- functionpoint
+[    0.188389] pci_find_next_bus -- functionpoint
+[    0.188390] not found bus -- functionpoint
+[    0.188729] pci_find_bus -- functionpoint
+[    0.188731] functionpoint -- domain_num = 0, bus_num = 6
+[    0.188733] pci_find_next_bus -- functionpoint
+[    0.188734] pci_find_next_bus -- functionpoint
+[    0.188735] not found bus -- functionpoint
+[    0.189063] pci_find_bus -- functionpoint
+[    0.189065] functionpoint -- domain_num = 0, bus_num = 7
+[    0.189067] pci_find_next_bus -- functionpoint
+[    0.189068] pci_find_next_bus -- functionpoint
+[    0.189069] not found bus -- functionpoint
+[    0.189397] pci_find_bus -- functionpoint
+[    0.189399] functionpoint -- domain_num = 0, bus_num = 8
+[    0.189401] pci_find_next_bus -- functionpoint
+[    0.189402] pci_find_next_bus -- functionpoint
+[    0.189403] not found bus -- functionpoint
+[    0.189725] pci_find_bus -- functionpoint
+[    0.189726] functionpoint -- domain_num = 0, bus_num = 9
+[    0.189728] pci_find_next_bus -- functionpoint
+[    0.189729] pci_find_next_bus -- functionpoint
+[    0.189730] not found bus -- functionpoint
+[    0.190062] pci_find_bus -- functionpoint
+[    0.190063] functionpoint -- domain_num = 0, bus_num = 10
+[    0.190066] pci_find_next_bus -- functionpoint
+[    0.190066] pci_find_next_bus -- functionpoint
+[    0.190067] not found bus -- functionpoint
+[    0.190379] pci_find_bus -- functionpoint
+[    0.190380] functionpoint -- domain_num = 0, bus_num = 11
+[    0.190382] pci_find_next_bus -- functionpoint
+[    0.190383] pci_find_next_bus -- functionpoint
+[    0.190384] not found bus -- functionpoint
+[    0.190712] pci_find_bus -- functionpoint
+[    0.190714] functionpoint -- domain_num = 0, bus_num = 12
+[    0.190716] pci_find_next_bus -- functionpoint
+[    0.190717] pci_find_next_bus -- functionpoint
+[    0.190718] not found bus -- functionpoint
+[    0.191046] pci_find_bus -- functionpoint
+[    0.191048] functionpoint -- domain_num = 0, bus_num = 13
+[    0.191050] pci_find_next_bus -- functionpoint
+[    0.191050] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 14
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 15
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 16
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 17
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 18
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 19
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 20
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 21
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191052] pci_find_bus -- functionpoint
+[    0.191052] functionpoint -- domain_num = 0, bus_num = 22
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] pci_find_next_bus -- functionpoint
+[    0.191052] not found bus -- functionpoint
+[    0.191093] pci_find_bus -- functionpoint
+[    0.191094] functionpoint -- domain_num = 0, bus_num = 23
+[    0.191097] pci_find_next_bus -- functionpoint
+[    0.191097] pci_find_next_bus -- functionpoint
+[    0.191098] not found bus -- functionpoint
+[    0.191409] pci_find_bus -- functionpoint
+[    0.191411] functionpoint -- domain_num = 0, bus_num = 24
+[    0.191413] pci_find_next_bus -- functionpoint
+[    0.191413] pci_find_next_bus -- functionpoint
+[    0.191415] not found bus -- functionpoint
+[    0.191754] pci_find_bus -- functionpoint
+[    0.191755] functionpoint -- domain_num = 0, bus_num = 25
+[    0.191757] pci_find_next_bus -- functionpoint
+[    0.191758] pci_find_next_bus -- functionpoint
+[    0.191759] not found bus -- functionpoint
+[    0.192095] pci_find_bus -- functionpoint
+[    0.192096] functionpoint -- domain_num = 0, bus_num = 26
+[    0.192099] pci_find_next_bus -- functionpoint
+[    0.192099] pci_find_next_bus -- functionpoint
+[    0.192101] not found bus -- functionpoint
+[    0.192440] pci_find_bus -- functionpoint
+[    0.192441] functionpoint -- domain_num = 0, bus_num = 27
+[    0.192443] pci_find_next_bus -- functionpoint
+[    0.192444] pci_find_next_bus -- functionpoint
+[    0.192445] not found bus -- functionpoint
+[    0.192784] pci_find_bus -- functionpoint
+[    0.192785] functionpoint -- domain_num = 0, bus_num = 28
+[    0.192788] pci_find_next_bus -- functionpoint
+[    0.192788] pci_find_next_bus -- functionpoint
+[    0.192789] not found bus -- functionpoint
+[    0.193117] pci_find_bus -- functionpoint
+[    0.193119] functionpoint -- domain_num = 0, bus_num = 29
+[    0.193121] pci_find_next_bus -- functionpoint
+[    0.193121] pci_find_next_bus -- functionpoint
+[    0.193123] not found bus -- functionpoint
+[    0.193451] pci_find_bus -- functionpoint
+[    0.193453] functionpoint -- domain_num = 0, bus_num = 30
+[    0.193455] pci_find_next_bus -- functionpoint
+[    0.193456] pci_find_next_bus -- functionpoint
+[    0.193457] not found bus -- functionpoint
+[    0.193796] pci_find_bus -- functionpoint
+[    0.193797] functionpoint -- domain_num = 0, bus_num = 31
+[    0.193800] pci_find_next_bus -- functionpoint
+[    0.193800] pci_find_next_bus -- functionpoint
+[    0.193801] not found bus -- functionpoint
+[    0.194140] pci_find_bus -- functionpoint
+[    0.194141] functionpoint -- domain_num = 0, bus_num = 32
+[    0.194144] pci_find_next_bus -- functionpoint
+[    0.194144] pci_find_next_bus -- functionpoint
+[    0.194145] not found bus -- functionpoint
+[    0.194484] pci_find_bus -- functionpoint
+[    0.194486] functionpoint -- domain_num = 0, bus_num = 33
+[    0.194488] pci_find_next_bus -- functionpoint
+[    0.194488] pci_find_next_bus -- functionpoint
+[    0.194490] not found bus -- functionpoint
+[    0.194812] pci_find_bus -- functionpoint
+[    0.194813] functionpoint -- domain_num = 0, bus_num = 34
+[    0.194815] pci_find_next_bus -- functionpoint
+[    0.194816] pci_find_next_bus -- functionpoint
+[    0.194817] not found bus -- functionpoint
+[    0.195146] pci_find_bus -- functionpoint
+[    0.195147] functionpoint -- domain_num = 0, bus_num = 35
+[    0.195149] pci_find_next_bus -- functionpoint
+[    0.195150] pci_find_next_bus -- functionpoint
+[    0.195151] not found bus -- functionpoint
+[    0.195479] pci_find_bus -- functionpoint
+[    0.195481] functionpoint -- domain_num = 0, bus_num = 36
+[    0.195483] pci_find_next_bus -- functionpoint
+[    0.195484] pci_find_next_bus -- functionpoint
+[    0.195485] not found bus -- functionpoint
+[    0.195824] pci_find_bus -- functionpoint
+[    0.195825] functionpoint -- domain_num = 0, bus_num = 37
+[    0.195827] pci_find_next_bus -- functionpoint
+[    0.195828] pci_find_next_bus -- functionpoint
+[    0.195829] not found bus -- functionpoint
+[    0.196149] pci_find_bus -- functionpoint
+[    0.196150] functionpoint -- domain_num = 0, bus_num = 38
+[    0.196153] pci_find_next_bus -- functionpoint
+[    0.196153] pci_find_next_bus -- functionpoint
+[    0.196154] not found bus -- functionpoint
+[    0.196476] pci_find_bus -- functionpoint
+[    0.196477] functionpoint -- domain_num = 0, bus_num = 39
+[    0.196480] pci_find_next_bus -- functionpoint
+[    0.196480] pci_find_next_bus -- functionpoint
+[    0.196481] not found bus -- functionpoint
+[    0.196810] pci_find_bus -- functionpoint
+[    0.196811] functionpoint -- domain_num = 0, bus_num = 40
+[    0.196814] pci_find_next_bus -- functionpoint
+[    0.196814] pci_find_next_bus -- functionpoint
+[    0.196815] not found bus -- functionpoint
+[    0.197144] pci_find_bus -- functionpoint
+[    0.197145] functionpoint -- domain_num = 0, bus_num = 41
+[    0.197148] pci_find_next_bus -- functionpoint
+[    0.197148] pci_find_next_bus -- functionpoint
+[    0.197150] not found bus -- functionpoint
+[    0.197478] pci_find_bus -- functionpoint
+[    0.197480] functionpoint -- domain_num = 0, bus_num = 42
+[    0.197482] pci_find_next_bus -- functionpoint
+[    0.197482] pci_find_next_bus -- functionpoint
+[    0.197484] not found bus -- functionpoint
+[    0.197812] pci_find_bus -- functionpoint
+[    0.197813] functionpoint -- domain_num = 0, bus_num = 43
+[    0.197816] pci_find_next_bus -- functionpoint
+[    0.197816] pci_find_next_bus -- functionpoint
+[    0.197817] not found bus -- functionpoint
+[    0.198146] pci_find_bus -- functionpoint
+[    0.198147] functionpoint -- domain_num = 0, bus_num = 44
+[    0.198150] pci_find_next_bus -- functionpoint
+[    0.198150] pci_find_next_bus -- functionpoint
+[    0.198151] not found bus -- functionpoint
+[    0.198490] pci_find_bus -- functionpoint
+[    0.198492] functionpoint -- domain_num = 0, bus_num = 45
+[    0.198494] pci_find_next_bus -- functionpoint
+[    0.198494] pci_find_next_bus -- functionpoint
+[    0.198496] not found bus -- functionpoint
+[    0.198824] pci_find_bus -- functionpoint
+[    0.198825] functionpoint -- domain_num = 0, bus_num = 46
+[    0.198828] pci_find_next_bus -- functionpoint
+[    0.198828] pci_find_next_bus -- functionpoint
+[    0.198829] not found bus -- functionpoint
+[    0.199157] pci_find_bus -- functionpoint
+[    0.199159] functionpoint -- domain_num = 0, bus_num = 47
+[    0.199161] pci_find_next_bus -- functionpoint
+[    0.199162] pci_find_next_bus -- functionpoint
+[    0.199163] not found bus -- functionpoint
+[    0.199491] pci_find_bus -- functionpoint
+[    0.199492] functionpoint -- domain_num = 0, bus_num = 48
+[    0.199495] pci_find_next_bus -- functionpoint
+[    0.199495] pci_find_next_bus -- functionpoint
+[    0.199497] not found bus -- functionpoint
+[    0.199836] pci_find_bus -- functionpoint
+[    0.199837] functionpoint -- domain_num = 0, bus_num = 49
+[    0.199839] pci_find_next_bus -- functionpoint
+[    0.199840] pci_find_next_bus -- functionpoint
+[    0.199841] not found bus -- functionpoint
+[    0.200159] pci_find_bus -- functionpoint
+[    0.200161] functionpoint -- domain_num = 0, bus_num = 50
+[    0.200163] pci_find_next_bus -- functionpoint
+[    0.200163] pci_find_next_bus -- functionpoint
+[    0.200165] not found bus -- functionpoint
+[    0.200494] pci_find_bus -- functionpoint
+[    0.200495] functionpoint -- domain_num = 0, bus_num = 51
+[    0.200497] pci_find_next_bus -- functionpoint
+[    0.200498] pci_find_next_bus -- functionpoint
+[    0.200499] not found bus -- functionpoint
+[    0.200828] pci_find_bus -- functionpoint
+[    0.200829] functionpoint -- domain_num = 0, bus_num = 52
+[    0.200832] pci_find_next_bus -- functionpoint
+[    0.200832] pci_find_next_bus -- functionpoint
+[    0.200833] not found bus -- functionpoint
+[    0.201162] pci_find_bus -- functionpoint
+[    0.201164] functionpoint -- domain_num = 0, bus_num = 53
+[    0.201166] pci_find_next_bus -- functionpoint
+[    0.201166] pci_find_next_bus -- functionpoint
+[    0.201168] not found bus -- functionpoint
+[    0.201496] pci_find_bus -- functionpoint
+[    0.201497] functionpoint -- domain_num = 0, bus_num = 54
+[    0.201500] pci_find_next_bus -- functionpoint
+[    0.201500] pci_find_next_bus -- functionpoint
+[    0.201502] not found bus -- functionpoint
+[    0.201840] pci_find_bus -- functionpoint
+[    0.201842] functionpoint -- domain_num = 0, bus_num = 55
+[    0.201844] pci_find_next_bus -- functionpoint
+[    0.201845] pci_find_next_bus -- functionpoint
+[    0.201846] not found bus -- functionpoint
+[    0.202185] pci_find_bus -- functionpoint
+[    0.202186] functionpoint -- domain_num = 0, bus_num = 56
+[    0.202189] pci_find_next_bus -- functionpoint
+[    0.202189] pci_find_next_bus -- functionpoint
+[    0.202190] not found bus -- functionpoint
+[    0.202529] pci_find_bus -- functionpoint
+[    0.202531] functionpoint -- domain_num = 0, bus_num = 57
+[    0.202533] pci_find_next_bus -- functionpoint
+[    0.202533] pci_find_next_bus -- functionpoint
+[    0.202535] not found bus -- functionpoint
+[    0.202873] pci_find_bus -- functionpoint
+[    0.202875] functionpoint -- domain_num = 0, bus_num = 58
+[    0.202877] pci_find_next_bus -- functionpoint
+[    0.202877] pci_find_next_bus -- functionpoint
+[    0.202879] not found bus -- functionpoint
+[    0.203208] pci_find_bus -- functionpoint
+[    0.203209] functionpoint -- domain_num = 0, bus_num = 59
+[    0.203211] pci_find_next_bus -- functionpoint
+[    0.203212] pci_find_next_bus -- functionpoint
+[    0.203213] not found bus -- functionpoint
+[    0.203542] pci_find_bus -- functionpoint
+[    0.203543] functionpoint -- domain_num = 0, bus_num = 60
+[    0.203545] pci_find_next_bus -- functionpoint
+[    0.203546] pci_find_next_bus -- functionpoint
+[    0.203547] not found bus -- functionpoint
+[    0.203875] pci_find_bus -- functionpoint
+[    0.203877] functionpoint -- domain_num = 0, bus_num = 61
+[    0.203879] pci_find_next_bus -- functionpoint
+[    0.203879] pci_find_next_bus -- functionpoint
+[    0.203881] not found bus -- functionpoint
+[    0.204202] pci_find_bus -- functionpoint
+[    0.204203] functionpoint -- domain_num = 0, bus_num = 62
+[    0.204206] pci_find_next_bus -- functionpoint
+[    0.204206] pci_find_next_bus -- functionpoint
+[    0.204208] not found bus -- functionpoint
+[    0.204536] pci_find_bus -- functionpoint
+[    0.204538] functionpoint -- domain_num = 0, bus_num = 63
+[    0.204540] pci_find_next_bus -- functionpoint
+[    0.204540] pci_find_next_bus -- functionpoint
+[    0.204542] not found bus -- functionpoint
+[    0.204881] pcibios_init -- functionpoint
+[    0.204882] PCI: pci_cache_line_size set to 64 bytes
+[    0.204975] e820: reserve RAM buffer [mem 0x0009f000-0x0009ffff]
+[    0.204976] e820: reserve RAM buffer [mem 0xbe6ab000-0xbfffffff]
+[    0.204977] e820: reserve RAM buffer [mem 0xbfc10000-0xbfffffff]
+[    0.204978] e820: reserve RAM buffer [mem 0x427800000-0x427ffffff]
+[    0.204978] end pci_subsys_init -- functionpoint
+[    0.205044] start netlbl_init --functionpoint
+[    0.205046] NetLabel: Initializing
+[    0.205047] NetLabel:  domain hash size = 128
+[    0.205048] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.205058] NetLabel:  unlabeled traffic allowed by default
+[    0.205058] end netlbl_init -- functionpoint
+[    0.208725] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    0.208731] hpet0: 8 comparators, 64-bit 24.000000 MHz counter
+[    0.210820] clocksource: Switched to clocksource hpet
+[    0.216542] VFS: Disk quotas dquot_6.6.0
+[    0.216555] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.216629] AppArmor: AppArmor Filesystem Enabled
+[    0.216631] driver_register -- functionpoint
+[    0.216632] bus_add_driver -- functionpoint
+[    0.216634] functionpoint -- bus: 'platform': add driver simple-framebuffer
+[    0.216646] driver_register -- functionpoint
+[    0.216646] bus_add_driver -- functionpoint
+[    0.216648] functionpoint -- bus: 'pnp': add driver system
+[    0.216653] pnp: PnP ACPI init
+[    0.216744] really_probe -- functionpoint
+[    0.216745] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:00
+[    0.216753] system 00:00: [mem 0x40000000-0x403fffff] could not be reserved
+[    0.216757] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.217051] really_probe -- functionpoint
+[    0.217051] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:01
+[    0.217059] system 00:01: [io  0x1800-0x18fe] has been reserved
+[    0.217060] system 00:01: [mem 0xfd000000-0xfd69ffff] has been reserved
+[    0.217061] system 00:01: [mem 0xfd6c0000-0xfd6cffff] has been reserved
+[    0.217063] system 00:01: [mem 0xfd6f0000-0xfdffffff] has been reserved
+[    0.217064] system 00:01: [mem 0xfe000000-0xfe01ffff] could not be reserved
+[    0.217065] system 00:01: [mem 0xfe200000-0xfe7fffff] has been reserved
+[    0.217066] system 00:01: [mem 0xff000000-0xffffffff] has been reserved
+[    0.217070] system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.217382] really_probe -- functionpoint
+[    0.217383] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:02
+[    0.217392] system 00:02: [io  0x2000-0x20fe] has been reserved
+[    0.217395] system 00:02: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.217511] really_probe -- functionpoint
+[    0.217512] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:03
+[    0.217521] system 00:03: [io  0x0680-0x069f] has been reserved
+[    0.217522] system 00:03: [io  0x164e-0x164f] has been reserved
+[    0.217525] system 00:03: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.217571] pnp 00:04: Plug and Play ACPI device, IDs PNP0b00 (active)
+[    0.217661] really_probe -- functionpoint
+[    0.217662] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:05
+[    0.217668] system 00:05: [io  0x1854-0x1857] has been reserved
+[    0.217671] system 00:05: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+[    0.217692] pnp 00:06: Plug and Play ACPI device, IDs HPQ8002 PNP0303 (active)
+[    0.217713] pnp 00:07: Plug and Play ACPI device, IDs PNP0f13 SYN0100 SYN0002 (active)
+[    0.217898] really_probe -- functionpoint
+[    0.217899] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:08
+[    0.217905] system 00:08: [io  0x0200-0x023f] has been reserved
+[    0.217907] system 00:08: [mem 0xfedb0000-0xfedbffff] has been reserved
+[    0.217910] system 00:08: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.218239] really_probe -- functionpoint
+[    0.218240] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:09
+[    0.218247] system 00:09: [mem 0xfd6e0000-0xfd6effff] has been reserved
+[    0.218248] system 00:09: [mem 0xfd6d0000-0xfd6dffff] has been reserved
+[    0.218249] system 00:09: [mem 0xfd6b0000-0xfd6bffff] has been reserved
+[    0.218250] system 00:09: [mem 0xfd6a0000-0xfd6affff] has been reserved
+[    0.218253] system 00:09: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.219334] really_probe -- functionpoint
+[    0.219335] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:0a
+[    0.219343] system 00:0a: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.219898] really_probe -- functionpoint
+[    0.219899] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:0b
+[    0.219908] system 00:0b: [mem 0xfed10000-0xfed17fff] has been reserved
+[    0.219909] system 00:0b: [mem 0xfed18000-0xfed18fff] has been reserved
+[    0.219911] system 00:0b: [mem 0xfed19000-0xfed19fff] has been reserved
+[    0.219912] system 00:0b: [mem 0xf8000000-0xfbffffff] has been reserved
+[    0.219913] system 00:0b: [mem 0xfed20000-0xfed3ffff] has been reserved
+[    0.219914] system 00:0b: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.219915] system 00:0b: [mem 0xfed45000-0xfed8ffff] has been reserved
+[    0.219917] system 00:0b: [mem 0xfee00000-0xfeefffff] has been reserved
+[    0.219920] system 00:0b: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.219967] really_probe -- functionpoint
+[    0.219968] functionpoint -- bus: 'pnp': really_probe: probing driver system with device 00:0c
+[    0.219974] system 00:0c: [mem 0xfed40000-0xfed44fff] has been reserved
+[    0.219977] system 00:0c: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.220164] pnp: PnP ACPI: found 13 devices
+[    0.230861] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.230864] pci 0000:03:00.0: can't claim BAR 6 [mem 0xfffe0000-0xffffffff pref]: no compatible bridge window
+[    0.230909] __pci_setup_bridge -- functionpoint
+[    0.230910] pci 0000:00:1b.0: PCI bridge to [bus 01]
+[    0.230918] pci 0000:00:1b.0:   bridge window [mem 0xf1100000-0xf11fffff]
+[    0.230930] pci 0000:03:00.0: BAR 6: assigned [mem 0xf1020000-0xf103ffff pref]
+[    0.230930] __pci_setup_bridge -- functionpoint
+[    0.230931] pci 0000:02:00.0: PCI bridge to [bus 03]
+[    0.230936] pci 0000:02:00.0:   bridge window [io  0x3000-0x3fff]
+[    0.230946] pci 0000:02:00.0:   bridge window [mem 0xf1000000-0xf10fffff]
+[    0.230964] __pci_setup_bridge -- functionpoint
+[    0.230965] pci 0000:00:1c.0: PCI bridge to [bus 02-03]
+[    0.230968] pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+[    0.230974] pci 0000:00:1c.0:   bridge window [mem 0xf1000000-0xf10fffff]
+[    0.230984] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.230985] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.230986] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.230988] pci_bus 0000:00: resource 7 [mem 0xd4800000-0xf7ffffff window]
+[    0.230989] pci_bus 0000:00: resource 8 [mem 0x4000000000-0x7fffffffff window]
+[    0.230990] pci_bus 0000:00: resource 9 [mem 0xfc800000-0xfe7fffff window]
+[    0.230991] pci_bus 0000:01: resource 1 [mem 0xf1100000-0xf11fffff]
+[    0.230992] pci_bus 0000:02: resource 0 [io  0x3000-0x3fff]
+[    0.230993] pci_bus 0000:02: resource 1 [mem 0xf1000000-0xf10fffff]
+[    0.230994] pci_bus 0000:03: resource 0 [io  0x3000-0x3fff]
+[    0.230995] pci_bus 0000:03: resource 1 [mem 0xf1000000-0xf10fffff]
+[    0.230996] pci_bus 0000:03: resource 4 [io  0x3000-0x3fff]
+[    0.230997] pci_bus 0000:03: resource 5 [mem 0xf1000000-0xf10fffff]
+[    0.231142] NET: Registered protocol family 2
+[    0.231286] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.231418] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.231494] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.231522] UDP hash table entries: 8192 (order: 6, 262144 bytes)
+[    0.231552] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes)
+[    0.231611] NET: Registered protocol family 1
+[    0.231620] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.231920] PCI: CLS 0 bytes, default 64
+[    0.231941] Unpacking initramfs...
+[    5.760637] Freeing initrd memory: 440868K
+[    5.760717] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    5.760720] software IO TLB [mem 0xb9506000-0xbd506000] (64MB) mapped at [00000000e04acfd2-000000000622d511]
+[    5.761189] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2b3e459bf4c, max_idle_ns: 440795289890 ns
+[    5.761612] Scanning for low memory corruption every 60 seconds
+[    5.761841] __pci_register_driver -- functionpoint
+[    5.761842] driver_register -- functionpoint
+[    5.761846] bus_add_driver -- functionpoint
+[    5.761848] functionpoint -- bus: 'pci': add driver iosf_mbi_pci
+[    5.761982] driver_register -- functionpoint
+[    5.761983] bus_add_driver -- functionpoint
+[    5.761985] functionpoint -- bus: 'platform': add driver alarmtimer
+[    5.762000] really_probe -- functionpoint
+[    5.762001] functionpoint -- bus: 'platform': really_probe: probing driver alarmtimer with device alarmtimer
+[    5.762404] Initialise system trusted keyrings
+[    5.762415] Key type blacklist registered
+[    5.762547] workingset: timestamp_bits=36 max_order=22 bucket_order=0
+[    5.763421] zbud: loaded
+[    5.763881] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    5.764192] fuse init (API version 7.26)
+[    5.769662] Key type asymmetric registered
+[    5.769663] Asymmetric key parser 'x509' registered
+[    5.769689] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    5.769797] io scheduler noop registered
+[    5.769797] io scheduler deadline registered
+[    5.769846] io scheduler cfq registered (default)
+[    5.770211] driver_register -- functionpoint
+[    5.770211] bus_add_driver -- functionpoint
+[    5.770214] functionpoint -- bus: 'platform': add driver amd_gpio
+[    5.770223] driver_register -- functionpoint
+[    5.770223] bus_add_driver -- functionpoint
+[    5.770225] functionpoint -- bus: 'platform': add driver cannonlake-pinctrl
+[    5.770231] driver_register -- functionpoint
+[    5.770232] bus_add_driver -- functionpoint
+[    5.770233] functionpoint -- bus: 'platform': add driver tps68470-gpio
+[    5.770241] driver_register -- functionpoint
+[    5.770241] bus_add_driver -- functionpoint
+[    5.770243] functionpoint -- bus: 'platform': add driver crystal_cove_pwm
+[    5.770265] __pci_register_driver -- functionpoint
+[    5.770265] driver_register -- functionpoint
+[    5.770267] bus_add_driver -- functionpoint
+[    5.770269] functionpoint -- bus: 'pci': add driver pcieport
+[    5.770273] really_probe -- functionpoint
+[    5.770274] functionpoint -- bus: 'pci': really_probe: probing driver pcieport with device 0000:00:1b.0
+[    5.770279] pci_device_probe -- functionpoint
+[    5.770280] pci_call_probe -- functionpoint
+[    5.770642] really_probe -- functionpoint
+[    5.770644] functionpoint -- bus: 'pci': really_probe: probing driver pcieport with device 0000:00:1c.0
+[    5.770649] pci_device_probe -- functionpoint
+[    5.770649] pci_call_probe -- functionpoint
+[    5.770934] driver_register -- functionpoint
+[    5.770936] bus_add_driver -- functionpoint
+[    5.770937] functionpoint -- bus: 'pci_express': add driver aer
+[    5.770940] really_probe -- functionpoint
+[    5.770941] functionpoint -- bus: 'pci_express': really_probe: probing driver aer with device 0000:00:1b.0:pcie002
+[    5.770977] pcieport 0000:00:1b.0: AER enabled with IRQ 122
+[    5.770979] really_probe -- functionpoint
+[    5.770980] functionpoint -- bus: 'pci_express': really_probe: probing driver aer with device 0000:00:1c.0:pcie002
+[    5.771010] pcieport 0000:00:1c.0: AER enabled with IRQ 123
+[    5.771016] driver_register -- functionpoint
+[    5.771016] bus_add_driver -- functionpoint
+[    5.771018] functionpoint -- bus: 'pci_express': add driver pcie_pme
+[    5.771021] really_probe -- functionpoint
+[    5.771022] functionpoint -- bus: 'pci_express': really_probe: probing driver pcie_pme with device 0000:00:1b.0:pcie001
+[    5.771038] pcieport 0000:00:1b.0: Signaling PME with IRQ 122
+[    5.771043] really_probe -- functionpoint
+[    5.771044] functionpoint -- bus: 'pci_express': really_probe: probing driver pcie_pme with device 0000:00:1c.0:pcie001
+[    5.771055] pcieport 0000:00:1c.0: Signaling PME with IRQ 123
+[    5.771061] driver_register -- functionpoint
+[    5.771061] bus_add_driver -- functionpoint
+[    5.771063] functionpoint -- bus: 'pci_express': add driver dpc
+[    5.771066] really_probe -- functionpoint
+[    5.771067] functionpoint -- bus: 'pci_express': really_probe: probing driver dpc with device 0000:00:1b.0:pcie010
+[    5.771086] dpc 0000:00:1b.0:pcie010: DPC error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    5.771088] really_probe -- functionpoint
+[    5.771088] functionpoint -- bus: 'pci_express': really_probe: probing driver dpc with device 0000:00:1c.0:pcie010
+[    5.771113] dpc 0000:00:1c.0:pcie010: DPC error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    5.771116] driver_register -- functionpoint
+[    5.771117] bus_add_driver -- functionpoint
+[    5.771119] functionpoint -- bus: 'pci_express': add driver pciehp
+[    5.771138] driver_register -- functionpoint
+[    5.771139] bus_add_driver -- functionpoint
+[    5.771141] functionpoint -- bus: 'platform': add driver dw-pcie
+[    5.771148] __pci_register_driver -- functionpoint
+[    5.771148] driver_register -- functionpoint
+[    5.771150] bus_add_driver -- functionpoint
+[    5.771152] functionpoint -- bus: 'pci': add driver imsttfb
+[    5.771159] __pci_register_driver -- functionpoint
+[    5.771159] driver_register -- functionpoint
+[    5.771161] bus_add_driver -- functionpoint
+[    5.771163] functionpoint -- bus: 'pci': add driver asiliantfb
+[    5.771169] driver_register -- functionpoint
+[    5.771169] bus_add_driver -- functionpoint
+[    5.771171] functionpoint -- bus: 'platform': add driver vesa-framebuffer
+[    5.771177] driver_register -- functionpoint
+[    5.771177] bus_add_driver -- functionpoint
+[    5.771179] functionpoint -- bus: 'platform': add driver efi-framebuffer
+[    5.771183] really_probe -- functionpoint
+[    5.771184] functionpoint -- bus: 'platform': really_probe: probing driver efi-framebuffer with device efi-framebuffer.0
+[    5.771189] efifb: probing for efifb
+[    5.771198] efifb: framebuffer at 0xe0000000, using 8100k, total 8100k
+[    5.771199] efifb: mode is 1920x1080x32, linelength=7680, pages=1
+[    5.771199] efifb: scrolling: redraw
+[    5.771200] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    5.775008] Console: switching to colour frame buffer device 240x67
+[    5.778708] fb0: EFI VGA frame buffer device
+[    5.778714] intel_idle: MWAIT substates: 0x11142120
+[    5.778714] intel_idle: v0.4.1 model 0x9E
+[    5.779395] intel_idle: lapic_timer_reliable_states 0xffffffff
+[    5.779431] driver_register -- functionpoint
+[    5.779432] bus_add_driver -- functionpoint
+[    5.779449] functionpoint -- bus: 'acpi': add driver ac
+[    5.779499] driver_register -- functionpoint
+[    5.779499] bus_add_driver -- functionpoint
+[    5.779514] functionpoint -- bus: 'acpi': add driver button
+[    5.779559] really_probe -- functionpoint
+[    5.779560] functionpoint -- bus: 'acpi': really_probe: probing driver button with device PNP0C0E:00
+[    5.779630] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0
+[    5.779645] ACPI: Sleep Button [SLPB]
+[    5.779650] really_probe -- functionpoint
+[    5.779651] functionpoint -- bus: 'acpi': really_probe: probing driver button with device PNP0C0C:00
+[    5.779712] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    5.779727] ACPI: Power Button [PWRB]
+[    5.779732] really_probe -- functionpoint
+[    5.779733] functionpoint -- bus: 'acpi': really_probe: probing driver button with device LNXPWRBN:00
+[    5.779792] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    5.779907] ACPI: Power Button [PWRF]
+[    5.779927] driver_register -- functionpoint
+[    5.779928] bus_add_driver -- functionpoint
+[    5.779943] functionpoint -- bus: 'platform': add driver acpi-fan
+[    5.779982] driver_register -- functionpoint
+[    5.779982] bus_add_driver -- functionpoint
+[    5.779996] functionpoint -- bus: 'cpu': add driver processor
+[    5.780077] really_probe -- functionpoint
+[    5.780078] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu0
+[    5.780409] really_probe -- functionpoint
+[    5.780410] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu1
+[    5.780709] really_probe -- functionpoint
+[    5.780710] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu2
+[    5.780924] really_probe -- functionpoint
+[    5.780925] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu3
+[    5.781202] really_probe -- functionpoint
+[    5.781203] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu4
+[    5.781476] really_probe -- functionpoint
+[    5.781477] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu5
+[    5.781749] really_probe -- functionpoint
+[    5.781750] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu6
+[    5.782044] really_probe -- functionpoint
+[    5.782045] functionpoint -- bus: 'cpu': really_probe: probing driver processor with device cpu7
+[    5.782485] driver_register -- functionpoint
+[    5.782486] bus_add_driver -- functionpoint
+[    5.782501] functionpoint -- bus: 'acpi': add driver thermal
+[    5.782561] driver_register -- functionpoint
+[    5.782562] bus_add_driver -- functionpoint
+[    5.782576] functionpoint -- bus: 'acpi': add driver hardware_error_device
+[    5.782637] driver_register -- functionpoint
+[    5.782638] bus_add_driver -- functionpoint
+[    5.782644] driver_register -- functionpoint
+[    5.782645] bus_add_driver -- functionpoint
+[    5.782646] functionpoint -- bus: 'acpi': add driver battery
+[    5.785675] functionpoint -- bus: 'platform': add driver tps68470_pmic_opregion
+[    5.786679] driver_register -- functionpoint
+[    5.786679] bus_add_driver -- functionpoint
+[    5.787667] functionpoint -- bus: 'platform': add driver gpio-clk
+[    5.789710] driver_register -- functionpoint
+[    5.789711] bus_add_driver -- functionpoint
+[    5.790700] functionpoint -- bus: 'platform': add driver clk-pmc-atom
+[    5.792748] driver_register -- functionpoint
+[    5.792749] bus_add_driver -- functionpoint
+[    5.793746] functionpoint -- bus: 'platform': add driver virtio-mmio
+[    5.795747] __pci_register_driver -- functionpoint
+[    5.795748] driver_register -- functionpoint
+[    5.796811] bus_add_driver -- functionpoint
+[    5.797813] functionpoint -- bus: 'pci': add driver virtio-pci
+[    5.799825] driver_register -- functionpoint
+[    5.799826] bus_add_driver -- functionpoint
+[    5.800885] functionpoint -- bus: 'virtio': add driver virtio_balloon
+[    5.802895] __pci_register_driver -- functionpoint
+[    5.802896] driver_register -- functionpoint
+[    5.803900] bus_add_driver -- functionpoint
+[    5.804953] functionpoint -- bus: 'pci': add driver xen-platform-pci
+[    5.807086] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    5.807094] driver_register -- functionpoint
+[    5.807094] bus_add_driver -- functionpoint
+[    5.808129] functionpoint -- bus: 'pnp': add driver serial
+[    5.813637] driver_register -- functionpoint
+[    5.813638] bus_add_driver -- functionpoint
+[    5.814632] functionpoint -- bus: 'platform': add driver serial8250
+[    5.816668] really_probe -- functionpoint
+[    5.816669] functionpoint -- bus: 'platform': really_probe: probing driver serial8250 with device serial8250
+[    5.818683] __pci_register_driver -- functionpoint
+[    5.818683] driver_register -- functionpoint
+[    5.819684] bus_add_driver -- functionpoint
+[    5.820721] functionpoint -- bus: 'pci': add driver serial
+[    5.822672] really_probe -- functionpoint
+[    5.822673] functionpoint -- bus: 'pci': really_probe: probing driver serial with device 0000:00:16.3
+[    5.824664] pci_device_probe -- functionpoint
+[    5.824665] pci_call_probe -- functionpoint
+[    5.825653] serial 0000:00:16.3: enabling device (0000 -> 0003)
+[    5.848051] 0000:00:16.3: ttyS4 at I/O 0x4088 (irq = 19, base_baud = 115200) is a 16550A
+[    5.848162] driver_register -- functionpoint
+[    5.848163] bus_add_driver -- functionpoint
+[    5.849142] functionpoint -- bus: 'spi': add driver max310x
+[    5.851091] driver_register -- functionpoint
+[    5.851091] bus_add_driver -- functionpoint
+[    5.852095] functionpoint -- bus: 'platform': add driver uart-sccnxp
+[    5.854128] driver_register -- functionpoint
+[    5.854128] bus_add_driver -- functionpoint
+[    5.855068] functionpoint -- bus: 'virtio': add driver virtio_console
+[    5.856972] driver_register -- functionpoint
+[    5.856972] bus_add_driver -- functionpoint
+[    5.857888] functionpoint -- bus: 'virtio': add driver virtio_rproc_serial
+[    5.859829] driver_register -- functionpoint
+[    5.859829] bus_add_driver -- functionpoint
+[    5.860769] functionpoint -- bus: 'acpi': add driver hpet
+[    5.862532] really_probe -- functionpoint
+[    5.862533] functionpoint -- bus: 'acpi': really_probe: probing driver hpet with device PNP0103:00
+[    5.864552] Linux agpgart interface v0.103
+[    5.864553] __pci_register_driver -- functionpoint
+[    5.864553] driver_register -- functionpoint
+[    5.865421] bus_add_driver -- functionpoint
+[    5.866277] functionpoint -- bus: 'pci': add driver agpgart-amd64
+[    5.868066] __pci_register_driver -- functionpoint
+[    5.868066] driver_register -- functionpoint
+[    5.868929] bus_add_driver -- functionpoint
+[    5.869791] functionpoint -- bus: 'pci': add driver agpgart-intel
+[    5.871507] __pci_register_driver -- functionpoint
+[    5.871507] driver_register -- functionpoint
+[    5.872413] bus_add_driver -- functionpoint
+[    5.873272] functionpoint -- bus: 'pci': add driver agpgart-via
+[    5.874999] driver_register -- functionpoint
+[    5.875000] bus_add_driver -- functionpoint
+[    5.875861] functionpoint -- bus: 'platform': add driver tpm_tis
+[    5.877643] driver_register -- functionpoint
+[    5.877643] bus_add_driver -- functionpoint
+[    5.878502] functionpoint -- bus: 'pnp': add driver tpm_tis
+[    5.880277] driver_register -- functionpoint
+[    5.880278] bus_add_driver -- functionpoint
+[    5.881136] functionpoint -- bus: 'acpi': add driver tpm_crb
+[    5.886263] loop: module loaded
+[    5.886264] driver_register -- functionpoint
+[    5.886266] bus_add_driver -- functionpoint
+[    5.887121] functionpoint -- bus: 'i2c': add driver htcpld-chip
+[    5.888870] driver_register -- functionpoint
+[    5.888871] bus_add_driver -- functionpoint
+[    5.889724] functionpoint -- bus: 'platform': add driver i2c-htcpld
+[    5.891432] driver_register -- functionpoint
+[    5.891433] bus_add_driver -- functionpoint
+[    5.892334] functionpoint -- bus: 'i2c': add driver tps65912
+[    5.894035] driver_register -- functionpoint
+[    5.894036] bus_add_driver -- functionpoint
+[    5.894886] functionpoint -- bus: 'spi': add driver tps65912
+[    5.896632] driver_register -- functionpoint
+[    5.896633] bus_add_driver -- functionpoint
+[    5.897478] functionpoint -- bus: 'i2c': add driver tps68470
+[    5.899176] driver_register -- functionpoint
+[    5.899177] bus_add_driver -- functionpoint
+[    5.900069] functionpoint -- bus: 'i2c': add driver twl
+[    5.901764] driver_register -- functionpoint
+[    5.901764] bus_add_driver -- functionpoint
+[    5.902606] functionpoint -- bus: 'platform': add driver twl4030-audio
+[    5.904306] driver_register -- functionpoint
+[    5.904307] bus_add_driver -- functionpoint
+[    5.905131] functionpoint -- bus: 'i2c': add driver twl6040
+[    5.906785] driver_register -- functionpoint
+[    5.906786] bus_add_driver -- functionpoint
+[    5.907611] functionpoint -- bus: 'i2c': add driver smsc
+[    5.909271] driver_register -- functionpoint
+[    5.909272] bus_add_driver -- functionpoint
+[    5.910078] functionpoint -- bus: 'i2c': add driver da9063
+[    5.911692] driver_register -- functionpoint
+[    5.911692] bus_add_driver -- functionpoint
+[    5.912545] functionpoint -- bus: 'i2c': add driver max14577
+[    5.914159] driver_register -- functionpoint
+[    5.914160] bus_add_driver -- functionpoint
+[    5.914966] functionpoint -- bus: 'i2c': add driver max77693
+[    5.916623] driver_register -- functionpoint
+[    5.916623] bus_add_driver -- functionpoint
+[    5.917427] functionpoint -- bus: 'i2c': add driver adp5520
+[    5.919028] driver_register -- functionpoint
+[    5.919029] bus_add_driver -- functionpoint
+[    5.919826] functionpoint -- bus: 'i2c': add driver intel_soc_pmic_i2c
+[    5.921467] driver_register -- functionpoint
+[    5.921468] bus_add_driver -- functionpoint
+[    5.922268] functionpoint -- bus: 'i2c': add driver CHT Whiskey Cove PMIC
+[    5.923863] driver_register -- functionpoint
+[    5.923864] bus_add_driver -- functionpoint
+[    5.924694] functionpoint -- bus: 'platform': add driver e820_pmem
+[    5.926283] driver_register -- functionpoint
+[    5.926284] bus_add_driver -- functionpoint
+[    5.927075] functionpoint -- bus: 'scsi': add driver sd
+[    5.928694] driver_register -- functionpoint
+[    5.928695] bus_add_driver -- functionpoint
+[    5.929483] functionpoint -- bus: 'scsi': add driver sr
+[    5.931257] __pci_register_driver -- functionpoint
+[    5.931257] driver_register -- functionpoint
+[    5.932089] bus_add_driver -- functionpoint
+[    5.932872] functionpoint -- bus: 'pci': add driver nvme
+[    5.934434] really_probe -- functionpoint
+[    5.934435] functionpoint -- bus: 'pci': really_probe: probing driver nvme with device 0000:01:00.0
+[    5.936054] pci_device_probe -- functionpoint
+[    5.936054] pci_call_probe -- functionpoint
+[    5.936993] nvme nvme0: pci function 0000:01:00.0
+[    5.937798] __pci_register_driver -- functionpoint
+[    5.937798] driver_register -- functionpoint
+[    5.938593] bus_add_driver -- functionpoint
+[    5.939383] functionpoint -- bus: 'pci': add driver ata_piix
+[    5.941025] __pci_register_driver -- functionpoint
+[    5.941025] driver_register -- functionpoint
+[    5.941818] bus_add_driver -- functionpoint
+[    5.942609] functionpoint -- bus: 'pci': add driver pata_sis
+[    5.944246] __pci_register_driver -- functionpoint
+[    5.944247] driver_register -- functionpoint
+[    5.945046] bus_add_driver -- functionpoint
+[    5.945832] functionpoint -- bus: 'pci': add driver ata_generic
+[    5.947435] libphy: Fixed MDIO Bus: probed
+[    5.947436] tun: Universal TUN/TAP device driver, 1.6
+[    5.947586] PPP generic driver version 2.4.2
+[    5.947727] driver_register -- functionpoint
+[    5.947727] bus_add_driver -- functionpoint
+[    5.948560] functionpoint -- bus: 'platform': add driver dwc2
+[    5.950135] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    5.950137] ehci-pci: EHCI PCI platform driver
+[    5.950137] __pci_register_driver -- functionpoint
+[    5.950138] driver_register -- functionpoint
+[    5.950925] bus_add_driver -- functionpoint
+[    5.951709] functionpoint -- bus: 'pci': add driver ehci-pci
+[    5.953331] ehci-platform: EHCI generic platform driver
+[    5.953331] driver_register -- functionpoint
+[    5.953332] bus_add_driver -- functionpoint
+[    5.954116] functionpoint -- bus: 'platform': add driver ehci-platform
+[    5.955697] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    5.955698] ohci-pci: OHCI PCI platform driver
+[    5.955698] __pci_register_driver -- functionpoint
+[    5.955699] driver_register -- functionpoint
+[    5.956535] bus_add_driver -- functionpoint
+[    5.957327] functionpoint -- bus: 'pci': add driver ohci-pci
+[    5.958905] ohci-platform: OHCI generic platform driver
+[    5.958905] driver_register -- functionpoint
+[    5.958906] bus_add_driver -- functionpoint
+[    5.959696] functionpoint -- bus: 'platform': add driver ohci-platform
+[    5.961322] uhci_hcd: USB Universal Host Controller Interface driver
+[    5.961325] __pci_register_driver -- functionpoint
+[    5.961325] driver_register -- functionpoint
+[    5.962124] bus_add_driver -- functionpoint
+[    5.962918] functionpoint -- bus: 'pci': add driver uhci_hcd
+[    5.964558] __pci_register_driver -- functionpoint
+[    5.964559] driver_register -- functionpoint
+[    5.965354] bus_add_driver -- functionpoint
+[    5.966150] functionpoint -- bus: 'pci': add driver xhci_hcd
+[    5.967738] really_probe -- functionpoint
+[    5.967739] functionpoint -- bus: 'pci': really_probe: probing driver xhci_hcd with device 0000:00:14.0
+[    5.969397] pci_device_probe -- functionpoint
+[    5.969397] pci_call_probe -- functionpoint
+[    5.970348] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    5.971163] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    5.972340] xhci_hcd 0000:00:14.0: hcc params 0x200077c1 hci version 0x110 quirks 0x00009810
+[    5.972345] xhci_hcd 0000:00:14.0: cache line size of 64 is not supported
+[    5.972490] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    5.972492] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.972493] usb usb1: Product: xHCI Host Controller
+[    5.972494] usb usb1: Manufacturer: Linux 4.15.9+ xhci-hcd
+[    5.972495] usb usb1: SerialNumber: 0000:00:14.0
+[    5.972642] really_probe -- functionpoint
+[    5.972643] functionpoint -- bus: 'usb': really_probe: probing driver usb with device usb1
+[    5.974303] really_probe -- functionpoint
+[    5.974304] functionpoint -- bus: 'usb': really_probe: probing driver hub with device 1-0:1.0
+[    5.975980] hub 1-0:1.0: USB hub found
+[    5.975999] hub 1-0:1.0: 16 ports detected
+[    5.976607] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    5.976609] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    5.976611] xhci_hcd 0000:00:14.0: Host supports USB 3.1 Enhanced SuperSpeed
+[    5.976636] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+[    5.976637] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    5.976638] usb usb2: Product: xHCI Host Controller
+[    5.976639] usb usb2: Manufacturer: Linux 4.15.9+ xhci-hcd
+[    5.976640] usb usb2: SerialNumber: 0000:00:14.0
+[    5.976799] really_probe -- functionpoint
+[    5.976800] functionpoint -- bus: 'usb': really_probe: probing driver usb with device usb2
+[    5.978513] really_probe -- functionpoint
+[    5.978514] functionpoint -- bus: 'usb': really_probe: probing driver hub with device 2-0:1.0
+[    5.980287] hub 2-0:1.0: USB hub found
+[    5.980302] hub 2-0:1.0: 10 ports detected
+[    5.980511] driver_register -- functionpoint
+[    5.980512] bus_add_driver -- functionpoint
+[    5.981375] functionpoint -- bus: 'pnp': add driver i8042 kbd
+[    5.983104] really_probe -- functionpoint
+[    5.983105] functionpoint -- bus: 'pnp': really_probe: probing driver i8042 kbd with device 00:06
+[    5.984911] driver_register -- functionpoint
+[    5.984912] bus_add_driver -- functionpoint
+[    5.985793] functionpoint -- bus: 'pnp': add driver i8042 aux
+[    5.987562] really_probe -- functionpoint
+[    5.987562] functionpoint -- bus: 'pnp': really_probe: probing driver i8042 aux with device 00:07
+[    5.989404] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+[    5.989503] driver_register -- functionpoint
+[    5.989504] bus_add_driver -- functionpoint
+[    5.990407] functionpoint -- bus: 'platform': add driver i8042
+[    5.992265] really_probe -- functionpoint
+[    5.992266] functionpoint -- bus: 'platform': really_probe: probing driver i8042 with device i8042
+[    5.997446] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    5.997450] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    5.997807] mousedev: PS/2 mouse device common for all mice
+[    5.998294] driver_register -- functionpoint
+[    5.998294] bus_add_driver -- functionpoint
+[    5.999204] functionpoint -- bus: 'serio': add driver atkbd
+[    6.001073] driver_register -- functionpoint
+[    6.001075] bus_add_driver -- functionpoint
+[    6.001985] functionpoint -- bus: 'i2c': add driver elants_i2c
+[    6.003809] really_probe -- functionpoint
+[    6.003810] functionpoint -- bus: 'serio': really_probe: probing driver atkbd with device serio0
+[    6.004311] driver_register -- functionpoint
+[    6.004312] bus_add_driver -- functionpoint
+[    6.004313] functionpoint -- bus: 'pnp': add driver rtc_cmos
+[    6.004317] really_probe -- functionpoint
+[    6.004317] functionpoint -- bus: 'pnp': really_probe: probing driver rtc_cmos with device 00:04
+[    6.004337] rtc_cmos 00:04: RTC can wake from S4
+[    6.005393] rtc_cmos 00:04: rtc core: registered rtc_cmos as rtc0
+[    6.005584] rtc_cmos 00:04: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+[    6.005591] i2c /dev entries driver
+[    6.005594] driver_register -- functionpoint
+[    6.005595] bus_add_driver -- functionpoint
+[    6.005596] functionpoint -- bus: 'platform': add driver poweroff-restart
+[    6.005634] device-mapper: uevent: version 1.0.3
+[    6.005780] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[    6.005782] intel_pstate: Intel P-state driver initializing
+[    6.005854] intel_pstate: Disabling energy efficiency optimization
+[    6.011624] intel_pstate: HWP enabled
+[    6.012413] ledtrig-cpu: registered to indicate activity on CPUs
+[    6.012414] EFI Variables Facility v0.08 2004-May-17
+[    6.033071] really_probe -- functionpoint
+[    6.033072] functionpoint -- bus: 'serio': really_probe: probing driver atkbd with device serio1
+[    6.046348] __pci_register_driver -- functionpoint
+[    6.046349] driver_register -- functionpoint
+[    6.046999] bus_add_driver -- functionpoint
+[    6.047647] functionpoint -- bus: 'pci': add driver intel_pmc_core
+[    6.049242] NET: Registered protocol family 10
+[    6.054192] Segment Routing with IPv6
+[    6.054201] NET: Registered protocol family 17
+[    6.054503] Key type dns_resolver registered
+[    6.055930] RAS: Correctable Errors collector initialized.
+[    6.056002] microcode: sig=0x906ed, pf=0x2, revision=0xd6
+[    6.056562] microcode: Microcode Update Driver: v2.2.
+[    6.056567] sched_clock: Marking stable (6056549243, 0)->(6031229635, 25319608)
+[    6.057343] registered taskstats version 1
+[    6.057350] Loading compiled-in X.509 certificates
+[    6.059255] Loaded X.509 cert 'Build time autogenerated kernel key: 03902da18b616967a7f9c6364ba63d3c9b9655c3'
+[    6.059264] zswap: loaded using pool lzo/zbud
+[    6.062830] Key type big_key registered
+[    6.062832] Key type trusted registered
+[    6.064297] Key type encrypted registered
+[    6.064298] AppArmor: AppArmor sha1 policy hashing enabled
+[    6.064300] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+[    6.064311] evm: HMAC attrs: 0x1
+[    6.065011]   Magic number: 4:51:375
+[    6.065418] rtc_cmos 00:04: setting system clock to 2020-09-30 09:22:19 UTC (1601457739)
+[    6.065596] driver_register -- functionpoint
+[    6.065597] bus_add_driver -- functionpoint
+[    6.066268] functionpoint -- bus: 'platform': add driver charger-manager
+[    6.067521] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    6.067521] EDD information not available.
+[    6.068916] Freeing unused kernel memory: 2388K
+[    6.068916] Write protecting the kernel read-only data: 20480k
+[    6.069438] Freeing unused kernel memory: 2008K
+[    6.071626] Freeing unused kernel memory: 1948K
+[    6.075253] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    6.149708] driver_register -- functionpoint
+[    6.149712] bus_add_driver -- functionpoint
+[    6.150538] functionpoint -- bus: 'platform': add driver acpi-wmi
+[    6.151978] really_probe -- functionpoint
+[    6.151979] functionpoint -- bus: 'platform': really_probe: probing driver acpi-wmi with device PNP0C14:00
+[    6.152478] nvme nvme0: missing or invalid SUBNQN field.
+[    6.154719] really_probe -- functionpoint
+[    6.154720] functionpoint -- bus: 'platform': really_probe: probing driver acpi-wmi with device PNP0C14:01
+[    6.156238] acpi PNP0C14:01: duplicate WMI GUID 05901221-D566-11D1-B2F0-00A0C9062910 (first instance was on PNP0C14:00)
+[    6.156400] __pci_register_driver -- functionpoint
+[    6.156401] driver_register -- functionpoint
+[    6.156450] really_probe -- functionpoint
+[    6.156451] functionpoint -- bus: 'platform': really_probe: probing driver acpi-wmi with device PNP0C14:02
+[    6.156480] acpi PNP0C14:02: duplicate WMI GUID 2B814318-4BE8-4707-9D84-A190A859B5D0 (first instance was on PNP0C14:00)
+[    6.156481] acpi PNP0C14:02: duplicate WMI GUID 41227C2D-80E1-423F-8B8E-87E32755A0EB (first instance was on PNP0C14:00)
+[    6.156481] acpi PNP0C14:02: duplicate WMI GUID 05901221-D566-11D1-B2F0-00A0C9062910 (first instance was on PNP0C14:00)
+[    6.159866] bus_add_driver -- functionpoint
+[    6.159866] functionpoint -- bus: 'pci': add driver ahci
+[    6.160840] pps_core: LinuxPPS API ver. 1 registered
+[    6.160840] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    6.161638] really_probe -- functionpoint
+[    6.161639] functionpoint -- bus: 'pci': really_probe: probing driver ahci with device 0000:00:17.0
+[    6.163338] pci_device_probe -- functionpoint
+[    6.163339] pci_call_probe -- functionpoint
+[    6.164197] ahci 0000:00:17.0: version 3.0
+[    6.164892]  nvme0n1: p1 p2 p3
+[    6.165211] tulip: Linux Tulip driver version 1.1.15 (Feb 27, 2007)
+[    6.165211] __pci_register_driver -- functionpoint
+[    6.165211] driver_register -- functionpoint
+[    6.165989] bus_add_driver -- functionpoint
+[    6.166745] functionpoint -- bus: 'pci': add driver tulip
+[    6.168255] really_probe -- functionpoint
+[    6.168256] functionpoint -- bus: 'pci': really_probe: probing driver tulip with device 0000:03:00.0
+[    6.169724] pci_device_probe -- functionpoint
+[    6.169724] pci_call_probe -- functionpoint
+[    6.170599] PTP clock support registered
+[    6.170638] tulip 0000:03:00.0: enabling device (0110 -> 0113)
+[    6.170720] tulip: tulip_init_one: Enabled WOL support for AN983B
+[    6.175695] ahci 0000:00:17.0: AHCI 0001.0301 32 slots 4 ports 6 Gbps 0xf impl SATA mode
+[    6.175697] ahci 0000:00:17.0: flags: 64bit ncq sntf pm clo only pio slum part ems deso sadm sds apst 
+[    6.177597] tulip0:  MII transceiver #1 config 1000 status 7849 advertising 05e1
+[    6.188549] driver_register -- functionpoint
+[    6.188550] bus_add_driver -- functionpoint
+[    6.189512] functionpoint -- bus: 'serio': add driver psmouse
+[    6.191142] really_probe -- functionpoint
+[    6.191143] functionpoint -- bus: 'serio': really_probe: probing driver psmouse with device serio1
+[    6.208735] scsi host0: ahci
+[    6.209696] scsi host1: ahci
+[    6.211642] scsi host2: ahci
+[    6.211923] scsi host3: ahci
+[    6.211999] ata1: SATA max UDMA/133 abar m2048@0xf1235000 port 0xf1235100 irq 133
+[    6.212048] ata2: SATA max UDMA/133 abar m2048@0xf1235000 port 0xf1235180 irq 133
+[    6.212058] ata3: SATA max UDMA/133 abar m2048@0xf1235000 port 0xf1235200 irq 133
+[    6.212069] ata4: SATA max UDMA/133 abar m2048@0xf1235000 port 0xf1235280 irq 133
+[    6.224840] net eth0: ADMtek Comet rev 17 at Port 0x3000, 00:00:a1:a7:22:0c, IRQ 18
+[    6.269484] tulip 0000:03:00.0 enp3s0: renamed from eth0
+[    6.269645] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    6.269645] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    6.269646] __pci_register_driver -- functionpoint
+[    6.269646] driver_register -- functionpoint
+[    6.270332] bus_add_driver -- functionpoint
+[    6.270991] functionpoint -- bus: 'pci': add driver e1000e
+[    6.272355] really_probe -- functionpoint
+[    6.272355] functionpoint -- bus: 'pci': really_probe: probing driver e1000e with device 0000:00:1f.6
+[    6.273683] pci_device_probe -- functionpoint
+[    6.273684] pci_call_probe -- functionpoint
+[    6.274571] e1000e 0000:00:1f.6: Interrupt Throttling Rate (ints/sec) set to dynamic conservative mode
+[    6.312215] usb 1-8: new full-speed USB device number 2 using xhci_hcd
+[    6.370628] e1000e 0000:00:1f.6 0000:00:1f.6 (uninitialized): registered PHC clock
+[    6.456152] e1000e 0000:00:1f.6 eth0: (PCI Express:2.5GT/s:Width x1) 80:e8:2c:d2:8b:40
+[    6.456153] e1000e 0000:00:1f.6 eth0: Intel(R) PRO/1000 Network Connection
+[    6.456319] e1000e 0000:00:1f.6 eth0: MAC: 13, PHY: 12, PBA No: FFFFFF-0FF
+[    6.457073] e1000e 0000:00:1f.6 eno1: renamed from eth0
+[    6.463239] usb 1-8: New USB device found, idVendor=28da, idProduct=1402
+[    6.463240] usb 1-8: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.463241] usb 1-8: Product: G.SKILL RIPJAWS KM560 MX GAMING KEYBOARD
+[    6.463241] usb 1-8: Manufacturer: G.SKILL Corporation
+[    6.463378] really_probe -- functionpoint
+[    6.463379] functionpoint -- bus: 'usb': really_probe: probing driver usb with device 1-8
+[    6.470452] hidraw: raw HID events driver (C) Jiri Kosina
+[    6.474294] driver_register -- functionpoint
+[    6.474295] bus_add_driver -- functionpoint
+[    6.474976] functionpoint -- bus: 'usb': add driver usbhid
+[    6.476313] really_probe -- functionpoint
+[    6.476314] functionpoint -- bus: 'usb': really_probe: probing driver usbhid with device 1-8:1.0
+[    6.478370] really_probe -- functionpoint
+[    6.478371] functionpoint -- bus: 'usb': really_probe: probing driver usbhid with device 1-8:1.1
+[    6.480107] really_probe -- functionpoint
+[    6.480107] functionpoint -- bus: 'usb': really_probe: probing driver usbhid with device 1-8:1.2
+[    6.482326] usbcore: registered new interface driver usbhid
+[    6.482326] usbhid: USB HID core driver
+[    6.484524] driver_register -- functionpoint
+[    6.484524] bus_add_driver -- functionpoint
+[    6.485200] functionpoint -- bus: 'hid': add driver hid-generic
+[    6.486523] really_probe -- functionpoint
+[    6.486523] functionpoint -- bus: 'hid': really_probe: probing driver hid-generic with device 0003:28DA:1402.0001
+[    6.487938] input: G.SKILL Corporation G.SKILL RIPJAWS KM560 MX GAMING KEYBOARD as /devices/pci0000:00/0000:00:14.0/usb1/1-8/1-8:1.0/0003:28DA:1402.0001/input/input6
+[    6.525697] ata3: SATA link down (SStatus 4 SControl 300)
+[    6.525744] ata2: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    6.525776] ata4: SATA link down (SStatus 4 SControl 300)
+[    6.525819] ata1: SATA link down (SStatus 4 SControl 300)
+[    6.526580] ata2.00: ACPI cmd f5/00:00:00:00:00:e0 (SECURITY FREEZE LOCK) filtered out
+[    6.526581] ata2.00: ACPI cmd b1/c1:00:00:00:00:e0 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    6.527217] ata2.00: ATA-8: WDC WD3200AAJS-56M0A0, 01.03E01, max UDMA/133
+[    6.527218] ata2.00: 625142448 sectors, multi 0: LBA48 NCQ (depth 31/32), AA
+[    6.528164] ata2.00: ACPI cmd f5/00:00:00:00:00:e0 (SECURITY FREEZE LOCK) filtered out
+[    6.528166] ata2.00: ACPI cmd b1/c1:00:00:00:00:e0 (DEVICE CONFIGURATION OVERLAY) filtered out
+[    6.528668] ata2.00: configured for UDMA/133
+[    6.529111] scsi 1:0:0:0: Direct-Access     ATA      WDC WD3200AAJS-5 3E01 PQ: 0 ANSI: 5
+[    6.529377] really_probe -- functionpoint
+[    6.529378] functionpoint -- bus: 'scsi': really_probe: probing driver sd with device 1:0:0:0
+[    6.530893] sd 1:0:0:0: Attached scsi generic sg0 type 0
+[    6.531320] sd 1:0:0:0: [sda] 625142448 512-byte logical blocks: (320 GB/298 GiB)
+[    6.531378] sd 1:0:0:0: [sda] Write Protect is off
+[    6.531379] sd 1:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    6.531511] sd 1:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    6.538102]  sda: sda1 < sda5 >
+[    6.539535] sd 1:0:0:0: [sda] Attached SCSI disk
+[    6.544412] hid-generic 0003:28DA:1402.0001: input,hidraw0: USB HID v1.11 Keyboard [G.SKILL Corporation G.SKILL RIPJAWS KM560 MX GAMING KEYBOARD] on usb-0000:00:14.0-8/input0
+[    6.544422] really_probe -- functionpoint
+[    6.544423] functionpoint -- bus: 'hid': really_probe: probing driver hid-generic with device 0003:28DA:1402.0002
+[    6.545963] input: G.SKILL Corporation G.SKILL RIPJAWS KM560 MX GAMING KEYBOARD as /devices/pci0000:00/0000:00:14.0/usb1/1-8/1-8:1.1/0003:28DA:1402.0002/input/input7
+[    6.592322] usb 1-12: new low-speed USB device number 3 using xhci_hcd
+[    6.604625] hid-generic 0003:28DA:1402.0002: input,hidraw1: USB HID v1.11 Device [G.SKILL Corporation G.SKILL RIPJAWS KM560 MX GAMING KEYBOARD] on usb-0000:00:14.0-8/input1
+[    6.604637] really_probe -- functionpoint
+[    6.604637] functionpoint -- bus: 'hid': really_probe: probing driver hid-generic with device 0003:28DA:1402.0003
+[    6.606119] input: G.SKILL Corporation G.SKILL RIPJAWS KM560 MX GAMING KEYBOARD as /devices/pci0000:00/0000:00:14.0/usb1/1-8/1-8:1.2/0003:28DA:1402.0003/input/input8
+[    6.664612] hid-generic 0003:28DA:1402.0003: input,hidraw2: USB HID v1.11 Keyboard [G.SKILL Corporation G.SKILL RIPJAWS KM560 MX GAMING KEYBOARD] on usb-0000:00:14.0-8/input2
+[    6.744628] usb 1-12: New USB device found, idVendor=03f0, idProduct=094a
+[    6.744629] usb 1-12: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    6.744630] usb 1-12: Product: HP USB Optical Mouse
+[    6.744631] usb 1-12: Manufacturer: PixArt
+[    6.744781] really_probe -- functionpoint
+[    6.744782] functionpoint -- bus: 'usb': really_probe: probing driver usb with device 1-12
+[    6.746763] really_probe -- functionpoint
+[    6.746764] functionpoint -- bus: 'usb': really_probe: probing driver usbhid with device 1-12:1.0
+[    6.749757] really_probe -- functionpoint
+[    6.749758] functionpoint -- bus: 'hid': really_probe: probing driver hid-generic with device 0003:03F0:094A.0004
+[    6.751224] input: PixArt HP USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/0003:03F0:094A.0004/input/input9
+[    6.751714] hid-generic 0003:03F0:094A.0004: input,hidraw3: USB HID v1.11 Mouse [PixArt HP USB Optical Mouse] on usb-0000:00:14.0-12/input0
+[    6.780731] clocksource: Switched to clocksource tsc
+[    6.907713] EXT4-fs (nvme0n1p2): mounted filesystem with ordered data mode. Opts: (null)
+[    7.074358] systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+[    7.092170] systemd[1]: Detected architecture x86-64.
+[    7.092283] systemd[1]: Set hostname to <Yee-680G4>.
+[    7.129532] systemd[1]: Listening on Journal Socket (/dev/log).
+[    7.129574] systemd[1]: Listening on udev Control Socket.
+[    7.129579] systemd[1]: Reached target Encrypted Volumes.
+[    7.129619] systemd[1]: Created slice System Slice.
+[    7.129654] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[    7.129665] systemd[1]: Listening on Syslog Socket.
+[    7.129669] systemd[1]: Reached target User and Group Name Lookups.
+[    7.145057] EXT4-fs (nvme0n1p2): re-mounted. Opts: errors=remount-ro
+[    7.147751] lp: driver loaded but no devices found
+[    7.150897] driver_register -- functionpoint
+[    7.150898] bus_add_driver -- functionpoint
+[    7.151662] functionpoint -- bus: 'parport': add driver ppdev
+[    7.153190] ppdev: user-space parallel port driver
+[    7.157326] driver_register -- functionpoint
+[    7.157329] bus_add_driver -- functionpoint
+[    7.158088] functionpoint -- bus: 'platform': add driver parport_pc
+[    7.159591] driver_register -- functionpoint
+[    7.159592] bus_add_driver -- functionpoint
+[    7.160329] functionpoint -- bus: 'pnp': add driver parport_pc
+[    7.161807] really_probe -- functionpoint
+[    7.161807] functionpoint -- bus: 'platform': really_probe: probing driver parport_pc with device parport_pc.956
+[    7.162542] systemd-journald[278]: Received request to flush runtime journal from PID 1
+[    7.163283] really_probe -- functionpoint
+[    7.163284] functionpoint -- bus: 'parport': really_probe: probing driver ppdev with device parport0
+[    7.164956] really_probe -- functionpoint
+[    7.164957] functionpoint -- bus: 'platform': really_probe: probing driver parport_pc with device parport_pc.888
+[    7.166470] really_probe -- functionpoint
+[    7.166470] functionpoint -- bus: 'parport': really_probe: probing driver ppdev with device parport0
+[    7.168078] really_probe -- functionpoint
+[    7.168078] functionpoint -- bus: 'platform': really_probe: probing driver parport_pc with device parport_pc.632
+[    7.169655] really_probe -- functionpoint
+[    7.169655] functionpoint -- bus: 'parport': really_probe: probing driver ppdev with device parport0
+[    7.171465] __pci_register_driver -- functionpoint
+[    7.171466] driver_register -- functionpoint
+[    7.172281] bus_add_driver -- functionpoint
+[    7.173064] functionpoint -- bus: 'pci': add driver parport_pc
+[    7.178469] driver_register -- functionpoint
+[    7.178471] bus_add_driver -- functionpoint
+[    7.179255] functionpoint -- bus: 'platform': add driver coretemp
+[    7.180860] really_probe -- functionpoint
+[    7.180861] functionpoint -- bus: 'platform': really_probe: probing driver coretemp with device coretemp.0
+[    7.201362] driver_register -- functionpoint
+[    7.201364] bus_add_driver -- functionpoint
+[    7.202351] functionpoint -- bus: 'acpi': add driver processor_aggregator
+[    7.204132] really_probe -- functionpoint
+[    7.204133] functionpoint -- bus: 'acpi': really_probe: probing driver processor_aggregator with device ACPI000C:00
+[    7.221960] __pci_register_driver -- functionpoint
+[    7.221962] driver_register -- functionpoint
+[    7.222830] bus_add_driver -- functionpoint
+[    7.223672] functionpoint -- bus: 'pci': add driver intel_pch_thermal
+[    7.225498] __pci_register_driver -- functionpoint
+[    7.225499] driver_register -- functionpoint
+[    7.225685] really_probe -- functionpoint
+[    7.225686] functionpoint -- bus: 'pci': really_probe: probing driver intel_pch_thermal with device 0000:00:12.0
+[    7.225690] pci_device_probe -- functionpoint
+[    7.225691] pci_call_probe -- functionpoint
+[    7.225699] intel_pch_thermal 0000:00:12.0: enabling device (0100 -> 0102)
+[    7.225863] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[    7.230514] bus_add_driver -- functionpoint
+[    7.230516] functionpoint -- bus: 'pci': add driver shpchp
+[    7.232356] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    7.264247] driver_register -- functionpoint
+[    7.264248] bus_add_driver -- functionpoint
+[    7.265153] functionpoint -- bus: 'serio': add driver serio_raw
+[    7.266987] driver_register -- functionpoint
+[    7.266988] bus_add_driver -- functionpoint
+[    7.267917] functionpoint -- bus: 'wmi': add driver wmi-bmof
+[    7.269499] really_probe -- functionpoint
+[    7.269500] functionpoint -- bus: 'wmi': really_probe: probing driver wmi-bmof with device 05901221-D566-11D1-B2F0-00A0C9062910
+[    7.271163] RAPL PMU: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+[    7.271164] RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+[    7.271164] RAPL PMU: hw unit of domain package 2^-14 Joules
+[    7.271165] RAPL PMU: hw unit of domain dram 2^-14 Joules
+[    7.271165] RAPL PMU: hw unit of domain pp1-gpu 2^-14 Joules
+[    7.271165] RAPL PMU: hw unit of domain psys 2^-14 Joules
+[    7.279819] hp_wmi: query 0x4 returned error 0x5
+[    7.283776] __pci_register_driver -- functionpoint
+[    7.283776] driver_register -- functionpoint
+[    7.284590] bus_add_driver -- functionpoint
+[    7.285455] functionpoint -- bus: 'pci': add driver mei_me
+[    7.289993] hp_wmi: query 0x4 returned error 0x5
+[    7.290437] random: crng init done
+[    7.292452] AVX2 version of gcm_enc/dec engaged.
+[    7.292452] AES CTR mode by8 optimization enabled
+[    7.292836] really_probe -- functionpoint
+[    7.292837] functionpoint -- bus: 'pci': really_probe: probing driver mei_me with device 0000:00:16.0
+[    7.294445] pci_device_probe -- functionpoint
+[    7.294445] pci_call_probe -- functionpoint
+[    7.295317] mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+[    7.296516] hp_wmi: query 0xd returned error 0x5
+[    7.296546] input: HP WMI hotkeys as /devices/virtual/input/input10
+[    7.296585] driver_register -- functionpoint
+[    7.296587] bus_add_driver -- functionpoint
+[    7.297484] functionpoint -- bus: 'platform': add driver hp-wmi
+[    7.297511] really_probe -- functionpoint
+[    7.297512] functionpoint -- bus: 'platform': really_probe: probing driver hp-wmi with device hp-wmi
+[    7.314686] driver_register -- functionpoint
+[    7.314686] bus_add_driver -- functionpoint
+[    7.315436] functionpoint -- bus: 'snd_seq': add driver snd_seq_midi
+[    7.391571] __pci_register_driver -- functionpoint
+[    7.391572] driver_register -- functionpoint
+[    7.392311] bus_add_driver -- functionpoint
+[    7.393018] functionpoint -- bus: 'pci': add driver snd_hda_intel
+[    7.394440] really_probe -- functionpoint
+[    7.394441] functionpoint -- bus: 'pci': really_probe: probing driver snd_hda_intel with device 0000:00:1f.3
+[    7.394445] pci_device_probe -- functionpoint
+[    7.394445] pci_call_probe -- functionpoint
+[    7.394446] azx_probe -- functionpoint
+[    7.394461] snd_hda_intel 0000:00:1f.3: enabling device (0100 -> 0102)
+[    7.394594] default_bdl_pos_adj -- functionpoint
+[    7.394595] azx_bus_init -- functionpoint
+[    7.401669] intel_rapl: Found RAPL domain package
+[    7.402344] intel_rapl: Found RAPL domain core
+[    7.402345] intel_rapl: Found RAPL domain uncore
+[    7.402345] intel_rapl: Found RAPL domain dram
+[    7.417028] Adding 1000444k swap on /dev/nvme0n1p3.  Priority:-2 extents:1 across:1000444k SSFS
+[    7.708600] __pci_register_driver -- functionpoint
+[    7.708601] driver_register -- functionpoint
+[    7.709266] bus_add_driver -- functionpoint
+[    7.709917] functionpoint -- bus: 'pci': add driver i915
+[    7.711368] snd_hda_intel 0000:00:1f.3: failed to add i915 component master (-19)
+[    7.717911] EXT4-fs (sda5): mounted filesystem with ordered data mode. Opts: (null)
+[    7.726790] driver_register -- functionpoint
+[    7.726791] bus_add_driver -- functionpoint
+[    7.727442] functionpoint -- bus: 'hdaudio': add driver snd_hda_codec_generic
+[    7.730999] driver_register -- functionpoint
+[    7.731000] bus_add_driver -- functionpoint
+[    7.731643] functionpoint -- bus: 'hdaudio': add driver snd_hda_codec_conexant
+[    7.731660] really_probe -- functionpoint
+[    7.731661] functionpoint -- bus: 'hdaudio': really_probe: probing driver snd_hda_codec_conexant with device hdaudioC0D0
+[    7.731675] snd_hda_codec_conexant hdaudioC0D0: CX20632: BIOS auto-probing.
+[    7.734782] snd_hda_codec_conexant hdaudioC0D0: autoconfig for CX20632: line_outs=1 (0x1c/0x0/0x0/0x0/0x0) type:line
+[    7.734784] snd_hda_codec_conexant hdaudioC0D0:    speaker_outs=1 (0x1f/0x0/0x0/0x0/0x0)
+[    7.734784] snd_hda_codec_conexant hdaudioC0D0:    hp_outs=1 (0x19/0x0/0x0/0x0/0x0)
+[    7.734785] snd_hda_codec_conexant hdaudioC0D0:    mono: mono_out=0x0
+[    7.734786] snd_hda_codec_conexant hdaudioC0D0:    inputs:
+[    7.734787] snd_hda_codec_conexant hdaudioC0D0:      Mic=0x1a
+[    7.734787] snd_hda_codec_conexant hdaudioC0D0:      Line=0x1d
+[    7.736531] snd_hda_codec_conexant hdaudioC0D0: Enable sync_write for stable communication
+[    7.745969] driver_register -- functionpoint
+[    7.745970] bus_add_driver -- functionpoint
+[    7.746659] functionpoint -- bus: 'hdaudio': add driver snd_hda_codec_hdmi
+[    7.746662] really_probe -- functionpoint
+[    7.746677] functionpoint -- bus: 'hdaudio': really_probe: probing driver snd_hda_codec_hdmi with device hdaudioC0D2
+[    7.746688] snd_hda_codec_hdmi hdaudioC0D2: No i915 binding for Intel HDMI/DP codec
+[    7.749826] really_probe -- functionpoint
+[    7.749827] functionpoint -- bus: 'hdaudio': really_probe: probing driver snd_hda_codec_hdmi with device hdaudioC0D2
+[    7.751295] snd_hda_codec_hdmi hdaudioC0D2: No i915 binding for Intel HDMI/DP codec
+[    7.752031] really_probe -- functionpoint
+[    7.752049] functionpoint -- bus: 'hdaudio': really_probe: probing driver snd_hda_codec_hdmi with device hdaudioC0D2
+[    7.755553] input: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input11
+[    7.755584] input: HDA Intel PCH Line as /devices/pci0000:00/0000:00:1f.3/sound/card0/input12
+[    7.755845] input: HDA Intel PCH Line Out as /devices/pci0000:00/0000:00:1f.3/sound/card0/input13
+[    7.755876] input: HDA Intel PCH Front Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input14
+[    7.755913] input: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input15
+[    7.812778] audit: type=1400 audit(1601457741.243:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=718 comm="apparmor_parser"
+[    7.836174] audit: type=1400 audit(1601457741.267:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ippusbxd" pid=733 comm="apparmor_parser"
+[    7.848688] audit: type=1400 audit(1601457741.279:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=719 comm="apparmor_parser"
+[    7.848833] audit: type=1400 audit(1601457741.279:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=719 comm="apparmor_parser"
+[    7.856975] audit: type=1400 audit(1601457741.287:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=728 comm="apparmor_parser"
+[    7.857077] audit: type=1400 audit(1601457741.287:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=728 comm="apparmor_parser"
+[    7.857160] audit: type=1400 audit(1601457741.287:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=728 comm="apparmor_parser"
+[    7.857248] audit: type=1400 audit(1601457741.287:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=728 comm="apparmor_parser"
+[    7.882722] audit: type=1400 audit(1601457741.311:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=737 comm="apparmor_parser"
+[    7.894749] audit: type=1400 audit(1601457741.323:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=730 comm="apparmor_parser"
+[    9.079220] IPv6: ADDRCONF(NETDEV_UP): eno1: link is not ready
+[    9.292216] IPv6: ADDRCONF(NETDEV_UP): eno1: link is not ready
+[    9.296444] IPv6: ADDRCONF(NETDEV_UP): enp3s0: link is not ready
+[   12.150642] e1000e: eno1 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[   12.150754] IPv6: ADDRCONF(NETDEV_CHANGE): eno1: link becomes ready
+[   17.071598] __pci_register_driver -- functionpoint
+[   17.071599] driver_register -- functionpoint
+[   17.071603] bus_add_driver -- functionpoint
+[   17.071604] functionpoint -- bus: 'pci': add driver vmw_vmci
+[   17.071616] Guest personality initialized and is inactive
+[   17.071681] VMCI host device registered (name=vmci, major=10, minor=55)
+[   17.071682] Initialized host personality
+[   17.091933] NET: Registered protocol family 40
